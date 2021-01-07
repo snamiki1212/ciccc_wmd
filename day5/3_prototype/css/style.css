@@ -7,6 +7,7 @@
 @import url("blocks/button.css");
 @import url("blocks/history-content.css");
 @import url("blocks/home-content.css");
+@import url("blocks/home-top.css");
 
 html {
   color: #3a294c;
