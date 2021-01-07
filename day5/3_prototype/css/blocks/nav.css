@@ -2,7 +2,6 @@
 }
 
 .nav .nav__list-parent {
-  display: flex;
   list-style: none;
 }
 
@@ -11,4 +10,5 @@
 
 .nav .nav__list-child-text {
   color: white;
+  font-size: 18px;
 }
