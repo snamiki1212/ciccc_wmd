@@ -1,0 +1,10 @@
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contents .contents__inner {
+  width: 80%;
+  display: flex;
+}

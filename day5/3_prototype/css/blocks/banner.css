@@ -1,0 +1,14 @@
+.banner {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.banner .banner__logo {
+  height: 60px;
+}
+
+.banner .banner__text {
+  font-size: 34px;
+}
