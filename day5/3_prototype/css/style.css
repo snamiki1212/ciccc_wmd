@@ -7,3 +7,8 @@
 @import url("blocks/button.css");
 @import url("blocks/history-content.css");
 @import url("blocks/home-content.css");
+
+html {
+  color: #3a294c;
+  background-color: #f1edf4;
+}
