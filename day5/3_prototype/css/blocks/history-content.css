@@ -2,6 +2,10 @@
   margin-top: 100px;
 }
 
+.history-content .history-content__title-wrapper {
+  margin-bottom: 30px;
+}
+
 .history-content .history-content__title {
   font-size: 34px;
   font-weight: 900;
