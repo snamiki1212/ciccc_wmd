@@ -5,3 +5,13 @@
 @import url("blocks/content.css");
 @import url("blocks/banner.css");
 @import url("blocks/button.css");
+
+.history-content {
+}
+.history-content .history-content__title {
+  font-size: 34px;
+  font-weight: 900;
+  border-top: 10px solid #745399;
+  border-left: 1px solid #745399;
+  color: #745399;
+}
