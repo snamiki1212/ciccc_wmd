@@ -6,12 +6,12 @@
 - [v] a navigation bar (to sections of the page)
 - [x] an image
 - [x] a table (with headings)
-- [ ] a horizontal rule.
+- [x] a horizontal rule.
       It should have as many as necessary:
 
-        - [ ] divisions,
-        - [ ] paragraphs
-        - [ ] sub-headlines.
+        - [x] divisions,
+        - [x] paragraphs
+        - [x] sub-headlines.
 
 ## 2)
 
@@ -24,8 +24,8 @@
 - [x] g. Use CSS pseudo-elements to style to first line of your paragraphs to have different background colors.
 - [x] h. Use CSS pseudo-classes to style your navigation bar to change color when hovered.
 - [x] i. Make your navbar to stick to top of the page
-- [ ] j. Make your image to float left of the page in the first paragraph
-- [ ] k. Color your page using a certain color scheme (cold, warm, modern etc.)
+- [x] j. Make your image to float left of the page in the first paragraph
+- [x] k. Color your page using a certain color scheme (cold, warm, modern etc.)
 
 ## UTILS
 
