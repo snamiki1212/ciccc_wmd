@@ -1,7 +1,13 @@
-* {
-  color: red;
+.a__main-title {
+  font-size: 54px;
 }
-
-table {
-  border: 1px solid black;
+.a__sub-title {
+  font-size: 32px;
+  color: lightblue;
+}
+#b__main_title {
+  color: blue;
+}
+#b__sub_title {
+  color: lightblue;
 }
