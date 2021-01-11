@@ -1,7 +1,7 @@
 /* UTIL------------------------------------------- */
 .navbar {
-  background-color: darkblue;
-  color: white;
+  background-color: var(--dark1);
+  color: var(--light1);
 }
 .navbar__list {
   list-style: none;
@@ -22,20 +22,20 @@
 
 /* B---------------------------------------------- */
 #b__main_title {
-  color: blue;
+  color: var(--dark1);
 }
 #b__sub_title {
-  color: lightblue;
+  color: var(--light2);
 }
 
 /* C---------------------------------------------- */
 .c__img-around-border {
-  border: 1px solid black;
+  border: 1px solid var(--dark1);
 }
 
 /* D---------------------------------------------- */
 .d__table-around-border {
-  border: 1px solid blue;
+  border: 1px solid var(--dark1);
   border-collapse: collapse;
 }
 
@@ -52,7 +52,7 @@
 
 /* G---------------------------------------------- */
 .g__firstline > p::first-line {
-  background-color: lightblue;
+  background-color: var(--light2);
 }
 
 /* H---------------------------------------------- */
@@ -60,7 +60,7 @@
   display: inline-block;
 }
 .h__hover > li:hover {
-  color: lightblue;
+  color: var(--light2);
   cursor: pointer;
 }
 
@@ -72,3 +72,8 @@
 
 /* J---------------------------------------------- */
 /* K---------------------------------------------- */
+:root {
+  --light1: white;
+  --light2: lightblue;
+  --dark1: darkblue;
+}
