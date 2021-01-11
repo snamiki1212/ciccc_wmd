@@ -32,20 +32,20 @@
 
 /* A---------------------------------------------- */
 .a__main-title {
-  font-size: 54px;
+  color: var(--dark1);
   font-family: "Courier New", Courier, monospace;
 }
 .a__sub-title {
-  font-size: 24;
+  color: var(--light2);
   font-family: sans-serif;
 }
 
 /* B---------------------------------------------- */
 #b__main_title {
-  color: var(--dark1);
+  font-size: 54px;
 }
 #b__sub_title {
-  color: var(--light2);
+  font-size: 24;
 }
 
 /* C---------------------------------------------- */
