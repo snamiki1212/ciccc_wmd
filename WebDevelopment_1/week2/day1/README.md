@@ -3,7 +3,7 @@
 ## 1)
 
 - [x] A main headline,
-- [v] a navigation bar (to sections of the page)
+- [x] a navigation bar (to sections of the page)
 - [x] an image
 - [x] a table (with headings)
 - [x] a horizontal rule.
