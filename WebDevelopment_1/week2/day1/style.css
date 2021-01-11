@@ -1,3 +1,15 @@
+/* UTIL------------------------------------------- */
+.navbar {
+  background-color: darkblue;
+  color: white;
+}
+.navbar__list {
+  list-style: none;
+}
+.navbar__list > li {
+  display: inline;
+}
+
 /* A---------------------------------------------- */
 .a__main-title {
   font-size: 54px;
@@ -49,6 +61,7 @@
 }
 .h__hover > li:hover {
   color: lightblue;
+  cursor: pointer;
 }
 
 /* I---------------------------------------------- */
@@ -56,5 +69,6 @@
   position: sticky;
   top: 20px;
 }
+
 /* J---------------------------------------------- */
 /* K---------------------------------------------- */
