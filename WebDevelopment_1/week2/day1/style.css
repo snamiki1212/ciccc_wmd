@@ -1,4 +1,7 @@
 /* UTIL------------------------------------------- */
+.headline {
+  text-align: center;
+}
 .navbar {
   background-color: var(--dark1);
   color: var(--light1);
