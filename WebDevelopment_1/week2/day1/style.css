@@ -23,7 +23,8 @@
 
 /* D---------------------------------------------- */
 .d__table-around-border {
-  border: 1px solid gray;
+  border: 1px solid blue;
+  border-collapse: collapse;
 }
 
 /* E---------------------------------------------- */
