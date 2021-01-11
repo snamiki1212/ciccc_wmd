@@ -18,7 +18,7 @@
 - [x] a. Use CSS classes to change the fonts for main and sub headlines.
 - [x] b. Use CSS ids to change sizes of main and sub headlines.
 - [x] c. Use CSS classes to style borders around your image element as you like.
-- [ ] d. Use CSS classes to style borders around your table element as you like.
+- [x] d. Use CSS classes to style borders around your table element as you like.
 - [ ] e. Use CSS classes to center the table headings of your tables and make them bold.
 - [ ] f. Use CSS pseudo-elements to style the first letter of your paragraphs to have bigger font sizes.
 - [ ] g. Use CSS pseudo-elements to style to first line of your paragraphs to have different background colors.
