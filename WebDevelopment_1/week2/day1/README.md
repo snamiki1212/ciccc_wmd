@@ -20,7 +20,7 @@
 - [x] c. Use CSS classes to style borders around your image element as you like.
 - [x] d. Use CSS classes to style borders around your table element as you like.
 - [x] e. Use CSS classes to center the table headings of your tables and make them bold.
-- [ ] f. Use CSS pseudo-elements to style the first letter of your paragraphs to have bigger font sizes.
+- [x] f. Use CSS pseudo-elements to style the first letter of your paragraphs to have bigger font sizes.
 - [ ] g. Use CSS pseudo-elements to style to first line of your paragraphs to have different background colors.
 - [ ] h. Use CSS pseudo-classes to style your navigation bar to change color when hovered.
 - [ ] i. Make your navbar to stick to top of the page
