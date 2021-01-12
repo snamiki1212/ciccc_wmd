@@ -1,11 +1,11 @@
 .nav__wrapper {
   background-image: url("https://images.unsplash.com/photo-1514477917009-389c76a86b68?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1561&q=80");
   padding: 1em 0;
-  position: sticky;
+  position: sticky; /** TASK:G */
 }
 .nav {
   list-style: none;
-  text-align: center;
+  text-align: center; /** TASK:E **/
 }
 .nav > li {
   display: inline;
@@ -19,6 +19,7 @@
   transition: 0.5s;
 }
 .nav__button:hover {
+  /* TASK:H */
   transition: 0.5s;
   background-color: var(--light);
 }

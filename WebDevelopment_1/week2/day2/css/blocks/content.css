@@ -4,9 +4,9 @@
 }
 
 .content-header {
-  text-align: center;
+  text-align: center; /** TASK:E **/
 }
 
 .content {
-  border: 1px solid var(--dark); /* TASK:CS */
+  border: 1px solid var(--dark); /* TASK:C */
 }
