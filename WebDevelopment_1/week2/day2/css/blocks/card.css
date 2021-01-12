@@ -1,4 +1,5 @@
 .card {
+  display: inline-block;
   background-color: lightblue;
   width: 20%;
   margin: 1em 2%;
@@ -8,6 +9,7 @@
 
 .avator {
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 .name__wrapper {
