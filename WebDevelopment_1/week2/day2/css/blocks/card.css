@@ -19,3 +19,9 @@
 .name {
   border-bottom: 1px solid var(--dark);
 }
+
+.description {
+  /** TASK: B **/
+  max-height: 10em;
+  max-width: 100em;
+}

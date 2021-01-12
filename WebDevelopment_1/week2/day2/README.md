@@ -1,7 +1,8 @@
 ## TASK
 
-- [ ] a. Use CSS to color the &lt;div&gt; elements with different colours (you can pick a color palette from here https://www.w3schools.com/colors/colors_palettes.asp) b. Use CSS to define the heights and width of your &lt;div&gt; elements accordingly.
-- [ ] c. Use CSS to style borders around your &lt;div&gt; elements as you like.
+- [x] a. Use CSS to color the &lt;div&gt; elements with different colours (you can pick a color palette from here https://www.w3schools.com/colors/colors_palettes.asp)
+- [x] b. Use CSS to define the heights and width of your &lt;div&gt; elements accordingly.
+- [x] c. Use CSS to style borders around your &lt;div&gt; elements as you like.
 - [ ] d. Use CSS to style borders around your &lt;img&gt; element as you like. Make their border round.
 - [ ] e. Use CSS to style your headlines and paragraphs. Headlines should be centered, and paragraphs should be justified.
 - [ ] f. Use CSS to make your card elements overflow ‘scroll’;
