@@ -1,0 +1,12 @@
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-header {
+  text-align: center;
+}
+
+.content {
+  border: 1px solid var(--dark);
+}
