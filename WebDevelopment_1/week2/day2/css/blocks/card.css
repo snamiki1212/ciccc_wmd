@@ -1,6 +1,7 @@
 .card {
   display: inline-block;
-  background-color: lightblue;
+  border: 1px solid var(--dark);
+  background-color: var(--light);
   width: 20%;
   margin: 1em 2%;
   padding: 1em;
@@ -11,6 +12,7 @@
 
 .avator {
   border-radius: 50%; /** TASK:D **/
+  border: 1px solid var(--dark);
   margin: 0 auto;
 }
 
