@@ -1,0 +1,19 @@
+.card {
+  background-color: lightblue;
+  width: 20%;
+  margin: 1em 2%;
+  padding: 1em;
+  text-align: center;
+}
+
+.avator {
+  border-radius: 50%;
+}
+
+.name__wrapper {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.name {
+  border-bottom: 1px solid var(--dark);
+}
