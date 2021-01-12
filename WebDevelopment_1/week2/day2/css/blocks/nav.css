@@ -14,10 +14,11 @@
 }
 .nav__button {
   text-decoration: none;
-  padding: 0.5em;
+  padding: 0.5em 2em;
   color: var(--dark); /** TASK:A **/
   background-color: var(--white);
   transition: 0.5s;
+  font-size: 1.5em;
 }
 .nav__button:hover {
   /* TASK:H */
