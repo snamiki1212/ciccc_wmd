@@ -8,3 +8,7 @@
 - [ ] g. Use CSS to make your navigation bar to stick to the top of the page.
 - [ ] h. Use CSS to make your navigation links hoverable, and your active link to have a different color.
 - [ ] i. Use CSS to set margin and padding properties of everything accordingly.
+
+## UTILS
+
+- DUMMY IMG: [placedog.net - Pooch-holders](https://placedog.net/)
