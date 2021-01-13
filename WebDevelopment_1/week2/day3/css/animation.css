@@ -44,7 +44,20 @@
 }
 
 /* e-vi */
+@keyframes e-vi-animation {
+  from {
+    background-color: var(--warm);
+  }
+  to {
+    background-color: var(--cold);
+  }
+}
 .e-vi {
+}
+.e-vi:hover {
+  animation-name: e-vi-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 /* e-vii */

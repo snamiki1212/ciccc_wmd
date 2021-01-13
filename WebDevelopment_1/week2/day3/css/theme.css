@@ -6,3 +6,8 @@
   --light-red: #f7cac9;
   --dark-red: #f7786b;
 }
+
+:root {
+  --warm: var(--dark-red);
+  --cold: var(--light-blue);
+}
