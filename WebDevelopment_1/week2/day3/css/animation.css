@@ -33,3 +33,24 @@
   transition: transform 0.5s;
   transform: rotateZ(180deg);
 }
+
+/* e-v */
+.e-v {
+  transition: transform 1s;
+}
+.e-v:hover {
+  transition: transform 1s;
+  transform: skewY(90deg);
+}
+
+/* e-vi */
+.e-vi {
+}
+
+/* e-vii */
+.e-vii {
+}
+
+/* e-vii */
+.e-viii {
+}
