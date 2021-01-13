@@ -1,3 +1,24 @@
-* {
-  color: red;
+h1 {
+  font-size: 1em;
+}
+.main {
+  text-align: center;
+}
+
+.container {
+  border: 1px solid black;
+  padding: 4em;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.row {
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 3em;
+  margin: 1em;
 }
