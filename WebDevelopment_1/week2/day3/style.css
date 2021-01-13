@@ -1,6 +1,9 @@
+@import "css/theme.css";
+
 h1 {
   font-size: 1em;
 }
+
 .main {
   text-align: center;
 }
