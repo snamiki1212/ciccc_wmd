@@ -61,7 +61,21 @@
 }
 
 /* e-vii */
+@keyframes e-vii-animation {
+  from {
+    position: relative;
+    left: -20px;
+  }
+  to {
+    position: relative;
+    left: 700px;
+  }
+}
 .e-vii {
+  animation-name: e-vii-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
 }
 
 /* e-vii */
