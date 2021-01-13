@@ -1,4 +1,4 @@
-/* e-i */
+/* TASK:e-i */
 .e-i {
   transition: transform 0.5s;
 }
@@ -7,7 +7,7 @@
   transition: 0.5s;
 }
 
-/* e-ii */
+/* TASK:e-ii */
 .e-ii {
   transition: transform 0.5s;
 }
@@ -16,7 +16,7 @@
   transform: scale(2);
 }
 
-/* e-iii */
+/* TASK:e-iii */
 .e-iii {
   transition: transform 0.5s;
 }
@@ -25,7 +25,7 @@
   transform: rotateX(180deg);
 }
 
-/* e-iv */
+/* TASK:e-iv */
 .e-iv {
   transition: transform 0.5s;
 }
@@ -34,7 +34,7 @@
   transform: rotateZ(180deg);
 }
 
-/* e-v */
+/* TASK:e-v */
 .e-v {
   transition: transform 1s;
 }
@@ -43,7 +43,7 @@
   transform: skewY(90deg);
 }
 
-/* e-vi */
+/* TASK:e-vi */
 @keyframes e-vi-animation {
   from {
     background-color: var(--warm);
@@ -60,7 +60,7 @@
   animation-fill-mode: forwards;
 }
 
-/* e-vii */
+/* TASK:e-vii */
 @keyframes e-vii-animation {
   from {
     position: relative;
@@ -78,7 +78,7 @@
   animation-timing-function: ease-in;
 }
 
-/* e-viii-a */
+/* TASK:e-viii-a */
 .e-viii-a {
   transition: transform 0.5s;
 }
@@ -87,7 +87,7 @@
   transform: rotate3d(1, 2, 1, 60deg) scale(3);
 }
 
-/* e-viii-b */
+/* TASK:e-viii-b */
 @keyframes e-viii-b-animation {
   0% {
     transform: rotate(0deg);
