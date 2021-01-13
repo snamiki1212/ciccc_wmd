@@ -78,6 +78,30 @@
   animation-timing-function: ease-in;
 }
 
-/* e-vii */
-.e-viii {
+/* e-viii-a */
+.e-viii-a {
+  transition: transform 0.5s;
+}
+.e-viii-a:hover {
+  transition: transform 0.5s;
+  transform: rotate3d(1, 2, 1, 60deg) scale(3);
+}
+
+/* e-viii-b */
+@keyframes e-viii-b-animation {
+  0% {
+    transform: rotate(0deg);
+    background-color: var(--warm);
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: var(--cold);
+  }
+}
+.e-viii-b {
+}
+.e-viii-b:hover {
+  animation-name: e-viii-b-animation;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.05, 0.25, 0.84, -0.21);
 }
