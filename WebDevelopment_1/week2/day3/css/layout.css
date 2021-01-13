@@ -28,6 +28,10 @@ h1 {
   /* TASK:C */
   border: 1px solid var(--dark-blue);
 }
+.box:hover {
+  /* TASK:D */
+  cursor: pointer;
+}
 
 .lightblue {
   background-color: var(--light-blue);
