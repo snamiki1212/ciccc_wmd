@@ -3,7 +3,7 @@
 I comment on each specific place, like `TASK:A`.
 
 - [x] a. Use CSS to color the &lt;div&gt; elements with different colours (you can pick a color palette from here https://www.w3schools.com/colors/colors_palettes.asp)
-- [ ] b. Use CSS to define the heights and width of your &lt;div&gt; elements accordingly.
+- [x] b. Use CSS to define the heights and width of your &lt;div&gt; elements accordingly.
 - [ ] c. Use CSS to style borders around your &lt;div&gt; elements as you like.
 - [ ] d. Use CSS to change mouse cursor to ‘pointer’ on hovering &lt;div&gt; squares.
 - [ ] e. Use CSS to add hover effects to your &lt;div&gt; squares.

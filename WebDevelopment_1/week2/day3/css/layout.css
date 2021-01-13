@@ -20,8 +20,10 @@ h1 {
 
 .box {
   display: inline-block;
-  padding: 3em;
   margin: 1em;
+  /* TASK:B */
+  height: 5em;
+  width: 5em;
 }
 
 .lightblue {
