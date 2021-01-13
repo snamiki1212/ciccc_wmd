@@ -24,6 +24,9 @@ h1 {
   /* TASK:B */
   height: 5em;
   width: 5em;
+
+  /* TASK:C */
+  border: 1px solid var(--dark-blue);
 }
 
 .lightblue {
