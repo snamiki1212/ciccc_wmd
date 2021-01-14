@@ -3,6 +3,7 @@
 @import "css/blocks/section.css";
 @import "css/blocks/header.css";
 @import "css/blocks/footer.css";
+@import "css/blocks/example.css";
 
 body {
   background-color: var(--light-gray);
