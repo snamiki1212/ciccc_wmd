@@ -2,5 +2,11 @@
   background-color: var(--dark-gray);
   color: var(--light-gray);
   position: sticky;
-  height: 5em;
+  top: 0;
+  height: 2em;
+  line-height: 2em;
+  padding-left: 2em;
+}
+
+.header__text {
 }
