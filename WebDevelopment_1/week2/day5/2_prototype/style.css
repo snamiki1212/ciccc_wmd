@@ -3,7 +3,8 @@
 @import "css/blocks/section.css";
 @import "css/blocks/header.css";
 @import "css/blocks/footer.css";
-@import "css/blocks/example.css";
+@import "css/examples/animation-iteration-count.css";
+@import "css/examples/animation-timing-function.css";
 
 body {
   background-color: var(--light-gray);

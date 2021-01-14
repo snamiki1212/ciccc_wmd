@@ -1,0 +1,41 @@
+.example__animation-timing-function {
+  width: 5em;
+  height: 5em;
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(700px);
+  }
+}
+
+.move {
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.ease {
+  animation-timing-function: ease;
+}
+
+.ease-in {
+  animation-timing-function: ease-in;
+}
+
+.ease-out {
+  animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+.linear {
+  animation-timing-function: linear;
+}

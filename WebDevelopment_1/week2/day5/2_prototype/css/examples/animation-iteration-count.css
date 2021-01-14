@@ -3,6 +3,7 @@
   height: 5em;
   background-color: var(--dark-gray);
   display: inline-block;
+  color: var(--white);
 }
 
 @keyframes spin {
