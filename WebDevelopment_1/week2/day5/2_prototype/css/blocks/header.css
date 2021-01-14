@@ -1,0 +1,6 @@
+.header {
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
+  position: sticky;
+  height: 5em;
+}

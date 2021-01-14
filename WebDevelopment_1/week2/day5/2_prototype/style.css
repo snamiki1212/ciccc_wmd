@@ -1,5 +1,7 @@
 @import "css/theme.css";
 @import "css/blocks/section.css";
+@import "css/blocks/header.css";
+@import "css/blocks/footer.css";
 
 body {
   background-color: var(--light-gray);
