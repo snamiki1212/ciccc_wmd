@@ -1,3 +1,6 @@
-* {
-  color: red;
+@import "css/theme.css";
+@import "css/blocks/section.css";
+
+body {
+  background-color: var(--light-gray);
 }

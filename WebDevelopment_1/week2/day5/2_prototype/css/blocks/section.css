@@ -1,0 +1,20 @@
+.section {
+  margin: 3em 5em;
+}
+
+.section .section__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section .section__title {
+  color: red;
+}
+
+.section .section__halfline {
+  width: 40%;
+  margin: 2%;
+  margin-left: 0;
+}
+
+.section .section__oneline {
+}
