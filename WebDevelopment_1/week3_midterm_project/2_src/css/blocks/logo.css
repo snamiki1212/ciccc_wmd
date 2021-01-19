@@ -1,0 +1,21 @@
+.logo {
+}
+
+.icon-logo-text {
+  fill: white;
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0));
+  height: 25px;
+  width: 199px;
+  margin-right: 1rem;
+}
+
+.icon-logo-star {
+  pointer-events: none;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  fill: hsla(0, 0%, 100%, 0.1);
+  width: 200px;
+  height: 200px;
+  margin: 0 0.5rem 0 0;
+}
