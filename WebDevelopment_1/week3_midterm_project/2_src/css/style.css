@@ -1,0 +1,7 @@
+@import "theme.css";
+
+html {
+  font-size: 12px;
+  background-color: var(--basic-bg-color);
+  color: var(--basic-font-color);
+}
