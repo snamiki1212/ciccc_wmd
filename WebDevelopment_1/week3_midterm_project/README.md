@@ -7,10 +7,12 @@ DOC: https://classroom.google.com/u/0/w/MjQ5NjIyMzA5MjEw/t/all
 - Analytic or Synthetic
   - Analytic
 - Detail
-  - REF: Medium
   - a home page
+    - [ CSS-Tricks ](https://css-tricks.com/)
   - an article page
+    - [ How to Make GraphQL and DynamoDB Play Nicely Together | CSS-Tricks ](https://css-tricks.com/how-to-make-graphql-and-dynamodb-play-nicely-together/)
   - a profile page
+    - [ Ryan Bethel, Author at CSS-Tricks ](https://css-tricks.com/author/ryanbethel/)
 - Wireframes: !!Detailed!!
   - Width
   - length
