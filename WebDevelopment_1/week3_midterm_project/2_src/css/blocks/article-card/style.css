@@ -1,13 +1,8 @@
+@import "large.css";
+@import "normal.css";
+
 :root {
   --article__min-height: 500px;
-}
-
-.article-card-large {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.article-card-normal {
 }
 
 .article-card {
@@ -19,6 +14,7 @@
 
 .article-thumbnail__wrap {
   position: relative;
+  min-height: 250px;
 }
 
 .article-thumbnail__wrap a:after {
@@ -51,10 +47,18 @@
   );
 }
 
+.article-large-thumbnail {
+  width: 120%;
+}
+
+.article-normal-thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
 .article-thumbnail {
   border-radius: 8px;
   max-width: none;
-  width: 120%;
   position: absolute;
   height: 100%;
   object-fit: cover;

@@ -1,0 +1,4 @@
+.article-card-normal {
+  display: flex;
+  flex-direction: column;
+}

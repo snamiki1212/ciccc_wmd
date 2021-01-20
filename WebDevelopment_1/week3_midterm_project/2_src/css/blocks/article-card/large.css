@@ -1,0 +1,4 @@
+.article-card-large {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
