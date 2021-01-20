@@ -15,3 +15,5 @@
   - if we want to put something design item, it's better to use `after/before` pesudo class.
   - ex: <body:before> => background
   - ex: <div:after> => design item
+- hover and change font-color
+  - css: `a:hover {opacity: .6}`
