@@ -1,0 +1,17 @@
+.footer-link-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-link-grid h5 {
+  color: #ff7a18;
+}
+.footer-link-grid ul,
+.footer-link-grid li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-link-grid a {
+  color: #a9a39f;
+}

@@ -1,3 +1,5 @@
+@import "link-grid.css";
+
 .site-footer {
   position: relative;
   background-color: black;
@@ -15,7 +17,12 @@
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: var(--gap);
+  align-items: end;
 }
 
-.footer-link-grid {
+.footer-form-wrap {
+  background: #434343;
+  margin: -3rem 0 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
