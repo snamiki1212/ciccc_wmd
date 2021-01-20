@@ -1,12 +1,16 @@
 @import "link-grid.css";
+@import "form.css";
 
 .site-footer {
   position: relative;
   background-color: black;
+  margin: calc(var(--gap) * 5) 0 0 0;
 }
 
 .footer-inside {
   margin: auto 0;
+  padding: 0 var(--gap);
+  height: 115px;
 }
 
 .footer-message-and-form {
@@ -18,36 +22,4 @@
   grid-template-columns: 1fr 1.4fr;
   gap: var(--gap);
   align-items: end;
-}
-
-.footer-form-wrap {
-  background: #434343;
-  margin: -3rem 0 0;
-  padding: 1.5rem;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  position: relative;
-}
-.footer-form-wrap:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 100%;
-  width: 20px;
-  height: 48px;
-  background: #909090;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
-}
-
-.footer-form-wrap h4 {
-  color: #ff7a18;
-  text-transform: uppercase;
-}
-
-.footer-form-wrap label {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
-  height: 1px;
 }

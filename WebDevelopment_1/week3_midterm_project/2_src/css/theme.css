@@ -2,4 +2,7 @@
   --basic-bg-color: #262626;
   --basic-font-color: #fff;
   --gap: 2rem;
+  --basic-font-family: Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
