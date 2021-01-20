@@ -1,3 +1,7 @@
+:root {
+  --article__min-height: 500px;
+}
+
 .article-card-large {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -8,4 +12,16 @@
   background-color: white;
   border-radius: 8px;
   filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.24));
+}
+
+.article-thumbnail__wrap {
+  position: relative;
+}
+
+.article-thumbnail {
+  width: 120%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  /* min-height: var(--article__min-height); */
 }
