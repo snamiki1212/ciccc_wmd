@@ -17,7 +17,7 @@
   min-height: 250px;
 }
 
-.article-thumbnail__wrap a:after {
+.white-gradient a:after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -26,38 +26,23 @@
   width: 50%;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(
-    90deg,
-    hsla(0, 0%, 100%, 0) 0,
-    hsla(0, 0%, 100%, 0.013) 8.1%,
-    hsla(0, 0%, 100%, 0.049) 15.5%,
-    hsla(0, 0%, 100%, 0.104) 22.5%,
-    hsla(0, 0%, 100%, 0.175) 29%,
-    hsla(0, 0%, 100%, 0.259) 35.3%,
-    hsla(0, 0%, 100%, 0.352) 41.2%,
-    hsla(0, 0%, 100%, 0.45) 47.1%,
-    hsla(0, 0%, 100%, 0.55) 52.9%,
-    hsla(0, 0%, 100%, 0.648) 58.8%,
-    hsla(0, 0%, 100%, 0.741) 64.7%,
-    hsla(0, 0%, 100%, 0.825) 71%,
-    hsla(0, 0%, 100%, 0.896) 77.5%,
-    hsla(0, 0%, 100%, 0.951) 84.5%,
-    hsla(0, 0%, 100%, 0.987) 91.9%,
-    #fff
-  );
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, #fff 90%, #fff);
 }
 
 .article-large-thumbnail {
   width: 120%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .article-normal-thumbnail {
   height: 100%;
   width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .article-thumbnail {
-  border-radius: 8px;
   max-width: none;
   position: absolute;
   height: 100%;
