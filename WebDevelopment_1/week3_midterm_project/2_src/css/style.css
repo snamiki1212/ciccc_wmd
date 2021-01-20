@@ -2,3 +2,7 @@
 @import "core.css";
 @import "blocks/fiexed.css";
 @import "blocks/logo.css";
+@import "blocks/article.css";
+@import "blocks/header.css";
+@import "blocks/link.css";
+@import "blocks/footer.css";

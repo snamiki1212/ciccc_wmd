@@ -19,3 +19,7 @@
   height: 200px;
   margin: 0 0.5rem 0 0;
 }
+
+.icon-logo-star__footer {
+  position: absolute;
+}

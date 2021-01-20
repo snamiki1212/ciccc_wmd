@@ -1,0 +1,11 @@
+.article-card-large {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.article-card {
+  color: #474747;
+  background-color: white;
+  border-radius: 8px;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.24));
+}
