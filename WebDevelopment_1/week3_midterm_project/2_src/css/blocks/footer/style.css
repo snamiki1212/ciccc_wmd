@@ -5,6 +5,8 @@
   position: relative;
   background-color: black;
   margin: calc(var(--gap) * 5) 0 0 0;
+  padding: 0 0 var(--gap);
+  height: 350px;
 }
 
 .footer-inside {
