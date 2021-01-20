@@ -17,3 +17,8 @@
   - ex: <div:after> => design item
 - hover and change font-color
   - css: `a:hover {opacity: .6}`
+- `mix-blend-mode`
+  - Awesome decoration and beautifull img!!
+  - Simple img on css:`div:after { background: linear-gradient(<params>)}`
+  - more beautiful img. it's awesome.
+  - https://codepen.io/snamiki1212/pen/xxEewjy

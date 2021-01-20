@@ -7,6 +7,9 @@
   grid-template-columns: 50% 50%;
 }
 
+.article-card-normal {
+}
+
 .article-card {
   color: #474747;
   background-color: white;
@@ -97,10 +100,6 @@
 }
 
 .author-row {
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
-
   display: grid;
   grid-template-columns: 40px 1fr;
   align-items: center;
