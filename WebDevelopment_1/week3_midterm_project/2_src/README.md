@@ -11,3 +11,7 @@
   - the reason is maybe for SEO?
 - `css: {filter: drop-shadow(<x-param>, <y-param>, <blur-radius>, color)}`
   - https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow()
+- before/after
+  - if we want to put something design item, it's better to use `after/before` pesudo class.
+  - ex: <body:before> => background
+  - ex: <div:after> => design item

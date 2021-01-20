@@ -26,6 +26,7 @@
   padding: 1.5rem;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  position: relative;
 }
 .footer-form-wrap:after {
   content: "";
