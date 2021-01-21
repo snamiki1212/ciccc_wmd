@@ -38,3 +38,7 @@
 .tags a:hover {
   border-bottom: 1px solid #ffdfc7;
 }
+
+.article-paper-wrapper {
+  margin-bottom: 5rem;
+}
