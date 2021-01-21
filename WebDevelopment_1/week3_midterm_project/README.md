@@ -2,6 +2,10 @@
 
 - [DOC](https://classroom.google.com/u/0/w/MjQ5NjIyMzA5MjEw/t/all)
 
+## Wireframe
+
+- [Wireframe - figma](https://www.figma.com/file/bMdiP4wEip43lpL8A1NGxx/CICCC_W3_Mid-prj?node-id=0%3A1)
+
 ## Overview
 
 - Team or Alone
