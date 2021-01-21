@@ -20,6 +20,9 @@
 }
 
 .footer-form-wrap h4 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
   color: #ff7a18;
   text-transform: uppercase;
 }
@@ -29,4 +32,9 @@
   clip: rect(1px, 1px, 1px, 1px);
   width: 1px;
   height: 1px;
+}
+
+.footer-form-wrap .text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
