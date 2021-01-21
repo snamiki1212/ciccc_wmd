@@ -1,0 +1,32 @@
+.ad-card {
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.ad-img {
+  border-radius: 4px;
+  box-shadow: 0 0 1.5rem rgb(17 17 17 / 70%);
+  transition: 0.5s;
+}
+.ad-img:hover {
+  transition: 0.5s;
+  transform: scale(1.03) rotate(-3deg);
+}
+
+.interlude {
+  padding: 1rem;
+}
+
+.interlude a {
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+}
+
+.interlude a:hover {
+  opacity: 0.6;
+}
+
+.spon-title {
+  display: block;
+  color: blue;
+}
