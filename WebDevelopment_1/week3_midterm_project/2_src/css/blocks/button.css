@@ -13,9 +13,11 @@
   border-radius: 4px;
   box-shadow: inset 1px 1px 0 #777, 0 2px 3px rgb(0 0 0 / 40%);
   border-style: none;
+  transition: 0.5s;
 }
 
 .button:hover {
   cursor: pointer;
   opacity: 0.6;
+  transition: 0.5s;
 }
