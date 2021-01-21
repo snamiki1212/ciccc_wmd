@@ -1,6 +1,8 @@
 ## midterm project
 
-DOC: https://classroom.google.com/u/0/w/MjQ5NjIyMzA5MjEw/t/all
+- [DOC](https://classroom.google.com/u/0/w/MjQ5NjIyMzA5MjEw/t/all)
+
+## Overview
 
 - Team or Alone
   - Alone
@@ -32,6 +34,6 @@ Present your work on Friday. In your presentation, tell us about:
 - b. How did you divide the work between team members?
   - Alone
 - c. Show us your wireframes.
-  - TODO:
+  - [1_wireframe](1_wireframe)
 - d. Show us the structure of your code.
-  - TODO:
+  - [2_src](2_src)
