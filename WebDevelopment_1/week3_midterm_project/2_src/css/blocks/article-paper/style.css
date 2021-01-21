@@ -14,3 +14,27 @@
 .article-paper h2 {
   margin-top: 5rem;
 }
+
+.article-paper-header {
+  padding: 0 0 2rem;
+}
+
+.artcile-title {
+  font-size: clamp(1.2rem, calc(1rem + 3.5vw), 4rem);
+  text-shadow: 0 2px 2px rgb(0 0 0 / 50%);
+}
+
+.font-white {
+  color: white;
+}
+
+.tags a {
+  font-size: 0.8rem;
+  color: #ffdfc7;
+  margin-right: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+}
+.tags a:hover {
+  border-bottom: 1px solid #ffdfc7;
+}
