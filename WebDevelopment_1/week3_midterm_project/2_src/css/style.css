@@ -1,8 +1,10 @@
+/* main */
 @import "theme.css";
 @import "core.css";
+
+/* block */
 @import "blocks/fixed.css";
 @import "blocks/logo.css";
-@import "blocks/article.css";
 @import "blocks/header.css";
 @import "blocks/link.css";
 @import "blocks/button.css";

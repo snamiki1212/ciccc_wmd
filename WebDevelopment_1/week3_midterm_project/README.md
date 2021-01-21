@@ -15,15 +15,16 @@
     - [ CSS-Tricks | How to Make GraphQL and DynamoDB Play Nicely Together](https://css-tricks.com/how-to-make-graphql-and-dynamodb-play-nicely-together/)
   - a profile page
     - [ CSS-Tricks | Ryan Bethel, Author at CSS-Tricks ](https://css-tricks.com/author/ryanbethel/)
+  - shared component
 
 ## Presentation
 
 Present your work on Friday. In your presentation, tell us about:
 
 - a. Why you choose that project?
-  - I had already experience to develop pages.
-    but no experience to analytic specific site in detailed.
-    so this it the reason.
+  - I had already experience to develop pages
+    but no experience to analytic specific site in detailed,
+    so this is the reason.
 - b. How did you divide the work between team members?
   - Alone
 - c. Show us your wireframes.
