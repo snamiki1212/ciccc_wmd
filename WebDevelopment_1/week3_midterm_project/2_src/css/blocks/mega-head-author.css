@@ -1,2 +1,35 @@
 .mega-header-author {
 }
+.mega-header-author {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1.5rem;
+  padding: 0 0 2rem;
+  z-index: 1;
+}
+
+.mega-author {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  border: 1vw solid #262626;
+}
+
+.mega-header-author h1 {
+  font-family: var(--tags-font-family);
+  text-shadow: 0 2px 2px rgb(0 0 0 / 50%);
+}
+
+.author-bio {
+  margin: 0 0 1.5rem;
+  font-size: 1.4rem;
+}
+
+.author-links a {
+  color: white;
+}
+
+.author-links a:hover {
+  opacity: 0.6;
+  border-bottom: 1px solid white;
+}
