@@ -15,6 +15,8 @@
   - if we want to put something design item, it's better to use `after/before` pesudo class.
   - ex: <body:before> => background
   - ex: <div:after> => design item
+  - ex: <img > => not working on img tag
+    - https://stackoverflow.com/a/5843078/8842333
 - hover and change font-color
   - css: `a:hover {opacity: .6}`
 - `mix-blend-mode`

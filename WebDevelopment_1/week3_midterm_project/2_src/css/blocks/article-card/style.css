@@ -3,6 +3,7 @@
 
 :root {
   --article__min-height: 500px;
+  --z-index__blend: 1;
 }
 
 .article-card {
@@ -47,7 +48,18 @@
   position: absolute;
   height: 100%;
   object-fit: cover;
-  /* min-height: var(--article__min-height); */
+}
+.article-thumbnail__wrap::before {
+  content: "";
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: screen;
+  z-index: 1;
 }
 
 .article-article {
