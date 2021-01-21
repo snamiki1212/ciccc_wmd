@@ -7,5 +7,8 @@
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --tags-font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, Rubik, Lato,
     Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  --input-font-family: Operator Mono SSm A, Operator Mono SSm B, Source Code Pro,
+    Menlo, Consolas, Monaco, monospace;
+
   --max-width: 1600px;
 }

@@ -38,3 +38,22 @@
   font-size: 1rem;
   margin-bottom: 2rem;
 }
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form input[type="email"] {
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #d4d4d4;
+  font-family: var(--input-font-family);
+  background: #eaeaea;
+  flex: 1;
+}
+
+.footer-form input[type="submit"] {
+  font-size: 1rem;
+}
