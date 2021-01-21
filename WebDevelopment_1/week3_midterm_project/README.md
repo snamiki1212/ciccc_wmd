@@ -12,16 +12,9 @@
   - a home page
     - [ CSS-Tricks ](https://css-tricks.com/)
   - an article page
-    - [ How to Make GraphQL and DynamoDB Play Nicely Together | CSS-Tricks ](https://css-tricks.com/how-to-make-graphql-and-dynamodb-play-nicely-together/)
+    - [ CSS-Tricks | How to Make GraphQL and DynamoDB Play Nicely Together](https://css-tricks.com/how-to-make-graphql-and-dynamodb-play-nicely-together/)
   - a profile page
-    - [ Ryan Bethel, Author at CSS-Tricks ](https://css-tricks.com/author/ryanbethel/)
-- Wireframes: !!Detailed!!
-  - Width
-  - length
-  - color
-  - font-size
-  - font-family
-  - and so on.
+    - [ CSS-Tricks | Ryan Bethel, Author at CSS-Tricks ](https://css-tricks.com/author/ryanbethel/)
 
 ## Presentation
 
