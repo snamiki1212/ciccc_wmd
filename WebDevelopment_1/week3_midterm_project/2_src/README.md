@@ -1,6 +1,6 @@
 ## Overview
 
-Analytics and imitation below site.
+Cloned for below site.
 
 - [ CSS-Tricks ](https://css-tricks.com/)
 
