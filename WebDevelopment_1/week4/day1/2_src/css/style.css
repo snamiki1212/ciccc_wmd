@@ -1,7 +1,13 @@
 :root {
+  /* 
+  Color Pattern
+  https://coolors.co/000000-14213d-fca311-e5e5e5-ffffff
+   */
   --white: white;
+  --light: #e5e5e5;
+  --vivid: #fca311;
+  --dark: #14213d;
   --black: black;
-  --base: darkgray;
 }
 
 html {
@@ -17,10 +23,11 @@ ul {
 .header {
   height: 10rem;
   width: 100%;
-  background: lightblue;
+  background: var(--black);
 }
 .header__title {
   font-size: 4rem;
+  color: var(--vivid);
 }
 .centerize {
   display: flex;
@@ -28,28 +35,31 @@ ul {
   align-items: center;
 }
 
-.nav {
-  border: 0.5rem solid red;
-}
 .nav ul {
   display: flex;
 }
 .nav ul li {
-  border: 0.5rem solid green;
+  background: var(--vivid);
+  /* border: 0.5rem solid var(--vivid); */
   list-style: none;
   flex-grow: 1;
   text-align: center;
   font-size: 1.5rem;
+  transition: 0.5s;
 }
 .nav ul li a {
   display: block;
   text-decoration: none;
+  color: var(--white);
+}
+.nav ul li:hover {
+  opacity: 0.6;
 }
 
 .img__container {
   margin: 3rem;
   padding: 3rem;
-  border: 1rem solid red;
+  border: 1rem solid var(--vivid);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -63,5 +73,5 @@ ul {
 .footer {
   height: 10rem;
   width: 100%;
-  background: blue;
+  background: var(--black);
 }
