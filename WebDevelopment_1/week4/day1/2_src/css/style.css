@@ -8,11 +8,15 @@
   --vivid: #fca311;
   --dark: #14213d;
   --black: black;
+
+  /* Layout */
+  --min-width: 450px;
+  --min-img-basis: 250px;
 }
 
 html {
   font-size: clamp(12px, calc(0.7rem + 0.25vw), 20px);
-  min-width: 450px;
+  min-width: var(--min-width);
 }
 
 ul {
@@ -45,7 +49,6 @@ ul {
 }
 .nav ul li {
   background: var(--vivid);
-  /* border: 0.5rem solid var(--vivid); */
   list-style: none;
   flex-grow: 1;
   text-align: center;
@@ -71,7 +74,7 @@ ul {
   gap: 5rem;
 }
 .img__content {
-  flex: 1 0 250px;
+  flex: 1 0 var(--min-img-basis);
   object-fit: cover;
 }
 
