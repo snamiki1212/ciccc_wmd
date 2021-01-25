@@ -4,6 +4,11 @@
   --base: darkgray;
 }
 
+html {
+  font-size: clamp(12px, calc(0.7rem + 0.25vw), 20px);
+  min-width: 450px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -13,6 +18,9 @@ ul {
   height: 10rem;
   width: 100%;
   background: lightblue;
+}
+.header__title {
+  font-size: 4rem;
 }
 .centerize {
   display: flex;
@@ -31,6 +39,11 @@ ul {
   list-style: none;
   flex-grow: 1;
   text-align: center;
+  font-size: 1.5rem;
+}
+.nav ul li a {
+  display: block;
+  text-decoration: none;
 }
 
 .img__container {
@@ -43,7 +56,7 @@ ul {
   gap: 5rem;
 }
 .img__content {
-  width: 24%;
+  flex: 1 0 250px;
   object-fit: cover;
 }
 
