@@ -1,4 +1,16 @@
-## Overview
+## Prerequreiments
+
+- Install VS Code Extension of `Live Sass Compiler`.
+  (This is little unstaible working while I am developing simultaneously)
+
+or
+
+- yarn
+
+  ```zsh
+  $ yarn
+  $ yarn sass:watch
+  ```
 
 ## Tasks
 
@@ -10,15 +22,3 @@
 - [x] 7. In your navbar module, create a mixin that sets the flex-direction (taking the direction as a parameter). Include (call) this mixin in your navbar rules.
 - [x] 8. Create another module, “\_header.scss” for your header. Style your header there.
 - [x] 9. Extend your header module to style your footer. Make changes as needed.
-
-## Prerequreiments
-
-Install VS Code Extension of `Live Sass Compiler`.
-(This is little unstaible working while I am developing simultaneously)
-
-or
-
-```
-yarn
-yarn sass:watch
-```
