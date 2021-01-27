@@ -1,5 +1,29 @@
 @import "_colors";
 
 .header {
-  color: $header_bg_color;
+  background: $header_bg_color;
+}
+
+.footer {
+  background: $footer_bg_color;
+}
+
+.aside {
+  background: $aside_bg_color;
+}
+
+.nav {
+  background: $nav_bg_color;
+}
+
+.section {
+  background: $section_bg_color;
+}
+
+.heading {
+  background: $heading_bg_color;
+}
+
+.article {
+  background: $article_bg_color;
 }
