@@ -1,10 +1,7 @@
 @import "_colors";
 @import "_navbar";
 @import "_header";
-
-.footer {
-  background: $footer_bg_color;
-}
+@import "_footer";
 
 .aside {
   background: $aside_bg_color;

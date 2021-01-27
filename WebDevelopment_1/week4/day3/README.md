@@ -9,7 +9,7 @@
 - [x] 6. Create a “\_navbar.scss” file that defines the navbar styles. Style your navbar only here.
 - [x] 7. In your navbar module, create a mixin that sets the flex-direction (taking the direction as a parameter). Include (call) this mixin in your navbar rules.
 - [x] 8. Create another module, “\_header.scss” for your header. Style your header there.
-- [ ] 9. Extend your header module to style your footer. Make changes as needed.
+- [x] 9. Extend your header module to style your footer. Make changes as needed.
 
 ## Prerequreiments
 
