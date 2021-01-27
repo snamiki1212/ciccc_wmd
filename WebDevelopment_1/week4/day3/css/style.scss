@@ -1,14 +1,10 @@
 @import "_colors";
 @import "_navbar";
-
-.header {
-  background: $header_bg_color;
-}
+@import "_header";
 
 .footer {
   background: $footer_bg_color;
 }
-
 
 .aside {
   background: $aside_bg_color;
