@@ -14,3 +14,13 @@
 ## Prerequreiments
 
 Install VS Code Extension of `Live Sass Compiler`.
+(This is little unstaible working while I am developing simultaneously)
+
+or
+
+```
+yarn
+yarn sass:watch
+```
+
+
