@@ -1,11 +1,5 @@
-@mixin border($color: #666) {
-  margin: 2px;
-  border-bottom: 3px double $color;
-}
+@import "_colors";
 
 .header {
-  @include border(#999);
-  .nav {
-    @include border;
-  }
+  color: $header_bg_color;
 }
