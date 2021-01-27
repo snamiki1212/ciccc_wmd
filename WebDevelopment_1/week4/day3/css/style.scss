@@ -3,12 +3,18 @@
 @import "_header";
 @import "_footer";
 
+.main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
 .aside {
   background: $aside_bg_color;
 }
 
 .section {
   background: $section_bg_color;
+  padding: 1rem;
 }
 
 .heading {
