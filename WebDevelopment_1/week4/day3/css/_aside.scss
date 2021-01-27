@@ -1,0 +1,5 @@
+@import "_darkmode";
+
+.aside {
+  @include darkmode($aside_bg_color, black);
+}
