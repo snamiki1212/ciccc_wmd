@@ -3,13 +3,15 @@ export const process = (componentName) => {
 
   fetch(htmlDir)
     .then((res) => res.text())
-    .then((strHtml) => cssImportLine + strHtml)
+    .then((strHtml) => renderCssImportLine(componentName) + strHtml)
     .then((strHtml) => define(componentName, strHtml));
 };
 
 const convertComponentNameToDir = (name) => `../components/${name}.html`;
 
-const cssImportLine = `<link href="css/reset.css" rel="stylesheet" />`;
+const renderCssImportLine = (componentName) =>
+  `<link href="../css/${componentName}.css" rel="stylesheet" />
+  <link href="css/reset.css" rel="stylesheet" />`;
 
 const define = (componentName, strHtml) => {
   customElements.define(
