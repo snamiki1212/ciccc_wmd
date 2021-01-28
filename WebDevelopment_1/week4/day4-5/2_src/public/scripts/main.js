@@ -6,6 +6,7 @@ const componentNameList = [
   "app-carousel",
   "app-uploader",
   "app-avator",
+  "app-like",
 ]
 
 componentNameList.forEach(name => {
