@@ -1,7 +1,23 @@
 @import "color";
 
 .header {
-  background: vavr(--dark-700);
+  // general
+  background: var(--dark-000);
   color: var(--light-200);
   height: 3rem;
+
+  // flex
+  display: flex;
+  justify-content: space-between;
+
+  &__submit-link {
+    padding: 0.4rem 2rem;
+    text-decoration: none;
+    color: var(--vivid-color);
+    text-align: center;
+    transition: hover 0.5s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }

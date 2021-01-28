@@ -44,3 +44,5 @@ $ yarn open # => open index.html file and then show top page
 # sass precompile
 $ yarn sass:watch
 ```
+
+Note that we need to do Hard Rereload on the browser every time when we fix some files because of maybe cache.
