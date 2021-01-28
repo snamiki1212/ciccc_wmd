@@ -10,6 +10,15 @@
   display: flex;
   justify-content: space-between;
 
+  &__logo-link {
+    text-decoration: none;
+    color: var(--vivid-color);
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
   &__submit-link-wrapper {
     padding: 0.4rem 2rem;
     line-height: 2rem;
