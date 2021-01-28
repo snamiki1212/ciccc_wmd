@@ -1,0 +1,27 @@
+@import "color";
+
+$avator_size: 5rem;
+
+.avator {
+  display: grid;
+  grid-template-columns: $avator_size 1fr;
+
+  &__description {
+    //
+  }
+
+  &__title {
+    color: var(--vivid-color);
+  }
+
+  &__img {
+    width: $avator_size;
+    height: $avator_size;
+    border-radius: 20px;
+    transition: 0.5s;
+
+    &:hover {
+      border-radius: 50%;
+    }
+  }
+}

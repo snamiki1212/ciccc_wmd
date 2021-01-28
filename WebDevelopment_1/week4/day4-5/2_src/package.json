@@ -6,7 +6,8 @@
   "scripts": {
     "start": "yarn http-server",
     "open": "open http://127.0.0.1:8080/pages/",
-    "sass:watch": "yarn sass --watch sass:public/css"
+    "sass": "sass sass:public/css", 
+    "sass:watch": "yarn sass --watch"
   },
   "devDependencies": {
     "http-server": "^0.12.3",
