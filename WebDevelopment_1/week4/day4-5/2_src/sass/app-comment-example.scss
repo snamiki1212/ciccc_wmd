@@ -2,6 +2,7 @@ $avator_size: 5rem;
 .example {
   display: grid;
   grid-template-columns: $avator_size 1fr;
+  margin-bottom: 10px;
 
   &__avator {
     width: $avator_size;
@@ -9,7 +10,8 @@ $avator_size: 5rem;
   }
 
   &__content {
-    background: var(--dark-700);
+    background: var(--dark-100);
+    padding: 10px;
   }
 }
 

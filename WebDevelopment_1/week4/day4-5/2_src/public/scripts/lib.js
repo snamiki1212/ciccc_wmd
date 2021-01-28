@@ -10,8 +10,8 @@ export const process = (componentName) => {
 const convertComponentNameToDir = (name) => `../components/${name}.html`;
 
 const renderCssImportLine = (componentName) =>
-  `<link href="../css/${componentName}.css" rel="stylesheet" />
-  <link href="css/reset.css" rel="stylesheet" />`;
+  `<link href="../css/${componentName}.css" rel="stylesheet" />`;
+  
 
 const define = (componentName, strHtml) => {
   customElements.define(
