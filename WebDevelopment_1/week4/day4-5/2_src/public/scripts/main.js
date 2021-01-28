@@ -8,6 +8,8 @@ const componentNameList = [
   "app-avator",
   "app-like",
   "app-picture-large",
+  "app-comment-input",
+  "app-comment-example",
 ]
 
 componentNameList.forEach(name => {

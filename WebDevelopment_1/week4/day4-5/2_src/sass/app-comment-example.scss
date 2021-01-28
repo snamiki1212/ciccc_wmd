@@ -1,0 +1,23 @@
+$avator_size: 5rem;
+.example {
+  display: grid;
+  grid-template-columns: $avator_size 1fr;
+
+  &__avator {
+    width: $avator_size;
+    height: $avator_size;
+  }
+
+  &__content {
+    background: var(--dark-700);
+  }
+}
+
+.content {
+  &__name {
+    color: var(--light-200);
+  }
+  &__text {
+    color: var(--light-000);
+  }
+}
