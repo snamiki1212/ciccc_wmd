@@ -1,0 +1,15 @@
+.carousel {
+  display: flex;
+  flex: 1 0 50rem;
+  gap: 1rem;
+  overflow-x: scroll;
+  transition: 0.5s;
+
+  &__link:hover {
+    opacity: 0.6;
+  }
+  &__img {
+    object-fit: cover;
+    width: 15rem;
+  }
+}
