@@ -10,14 +10,16 @@
   display: flex;
   justify-content: space-between;
 
-  &__submit-link {
+  &__submit-link-wrapper {
     padding: 0.4rem 2rem;
-    text-decoration: none;
-    color: var(--vivid-color);
-    text-align: center;
+    line-height: 2rem;
     transition: hover 0.5s;
     &:hover {
       opacity: 0.6;
     }
+  }
+  &__submit-link {
+    text-decoration: none;
+    color: var(--vivid-color);
   }
 }
