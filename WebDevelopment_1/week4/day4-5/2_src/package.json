@@ -1,0 +1,13 @@
+{
+  "name": "2_src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "open": "open public/pages/index.html",
+    "sass:watch": "yarn sass --watch sass:public/css"
+  },
+  "devDependencies": {
+    "sass": "^1.32.5"
+  }
+}
