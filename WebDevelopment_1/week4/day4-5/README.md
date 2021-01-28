@@ -33,6 +33,8 @@ $ cd 2_src
 
 $ yarn
 
+$ yarn start # => another terminal
+
 $ yarn open # => open index.html file and then show top page
 ```
 
