@@ -1,7 +1,8 @@
 .picture-large {
-  width: 80%;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+
   &__img {
-    width: 100%;
+    width: 60%;
   }
 }
