@@ -11,6 +11,7 @@ const componentNameList = [
   "app-comment-input",
   "app-comment-example",
   "app-random-images",
+  "app-panels",
 ]
 
 componentNameList.forEach(name => {
