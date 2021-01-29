@@ -7,11 +7,10 @@ export const process = (componentName) => {
     .then((strHtml) => define(componentName, strHtml));
 };
 
-const convertComponentNameToDir = (name) => `../components/${name}.html`;
+const convertComponentNameToDir = (name) => `../components/${name}/index.html`;
 
 const renderCssImportLine = (componentName) =>
-  `<link href="../css/${componentName}.css" rel="stylesheet" />`;
-  
+  `<link href="../components/${componentName}/style.css" rel="stylesheet" />`;
 
 const define = (componentName, strHtml) => {
   customElements.define(
