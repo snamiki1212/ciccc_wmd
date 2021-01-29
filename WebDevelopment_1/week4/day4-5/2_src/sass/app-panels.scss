@@ -1,0 +1,29 @@
+.app-panels {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 200px;
+  gap: 5px;
+
+  &__link {
+    width: 100px;
+  }
+  &__img {
+    width: 100%;
+  }
+}
+
+.w-100 {
+  width: 100px;
+}
+.w-200 {
+  width: 200px;
+}
+.w-300 {
+  width: 300px;
+}
+.w-400 {
+  width: 400px;
+}
+.w-500 {
+  width: 500px;
+}

@@ -10,6 +10,7 @@ const componentNameList = [
   "app-picture-large",
   "app-comment-input",
   "app-comment-example",
+  "app-panels",
 ]
 
 componentNameList.forEach(name => {
