@@ -4,6 +4,7 @@
   background: var(--dark-000);
   &__text {
     color: var(--light-200);
+    font-size: 2rem;
     &:hover {
       cursor: pointer;
       color: var(--vivid-color);
