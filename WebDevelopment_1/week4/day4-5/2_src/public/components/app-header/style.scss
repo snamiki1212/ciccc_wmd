@@ -10,6 +10,12 @@
   display: flex;
   justify-content: space-between;
 
+  &__logo-wrapper {
+    display: grid;
+    place-content: center;
+    margin-left: 1rem;
+  }
+
   &__logo-link {
     text-decoration: none;
     color: var(--vivid-color);
