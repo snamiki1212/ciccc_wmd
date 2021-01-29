@@ -8,3 +8,15 @@
 
 .layout-submit {
 }
+
+.layout-picture {
+  // background: var(--dark-000);
+  background: lightblue;
+  color: var(--light-000);
+
+  &__comments {
+    display: grid;
+    gap: 10px;
+    padding-bottom: 5px;
+  }
+}

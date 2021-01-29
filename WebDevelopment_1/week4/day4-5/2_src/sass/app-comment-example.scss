@@ -1,8 +1,10 @@
-$avator_size: 5rem;
+$avator_size: 32px;
+$gap: 10px;
+
 .example {
   display: grid;
   grid-template-columns: $avator_size 1fr;
-  margin-bottom: 10px;
+  gap: $gap;
 
   &__avator {
     width: $avator_size;
