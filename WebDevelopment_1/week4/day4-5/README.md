@@ -13,6 +13,14 @@ Build a photo sharing website.
 - Team or Alone
   - Alone
 
+## Tech Stack
+
+- HTML5
+  - Web Components
+- SCSS
+  - No CSS FW
+- Vanilla JavaScript
+
 ## Requirements
 
 - [x] Home Page: `index.html`
