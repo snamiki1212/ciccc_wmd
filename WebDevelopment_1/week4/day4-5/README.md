@@ -15,15 +15,15 @@ Build a photo sharing website.
 
 ## Requirements
 
-- [ ] Home Page: `index.html`
+- [x] Home Page: `index.html`
   > a. It should have a home page, where you show some of the popular pictures.
-- [ ] Detail Page: `picture.html`
+- [x] Detail Page: `picture.html`
   > b. It should have a see page, that shows the pic and likes, comments etc.
-- [ ] Submit Page: `submit.html`
+- [x] Submit Page: `submit.html`
   > c. It should have a submit page, where users can submit photos (not real, of course)
-- [ ] Mobile Friendly work
+- [x] Mobile Friendly work
   > d. It should have a mobile-friendly version.
-- [ ] Use SCSS
+- [x] Use SCSS
   > e. It should be styled using SCSS.
 
 ## Installation
