@@ -6,6 +6,9 @@
 
   &__link {
     width: 100px;
+    &:hover {
+      opacity: 0.6;
+    }
   }
   &__img {
     width: 100%;

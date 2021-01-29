@@ -1,3 +1,10 @@
+@import "color";
+
 .layout-index {
   padding: 2rem;
+  background: var(--dark-000);
+  color: var(--light-000);
+}
+
+.layout-submit {
 }

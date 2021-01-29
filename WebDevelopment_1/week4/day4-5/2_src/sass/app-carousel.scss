@@ -6,9 +6,12 @@
   overflow-x: scroll;
   transition: 0.5s;
 
-  &__link:hover {
-    opacity: 0.6;
+  &__link {
+    &:hover {
+      opacity: 0.6;
+    }
   }
+
   &__img {
     object-fit: cover;
     width: 10rem;
