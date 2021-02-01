@@ -18,7 +18,7 @@ node index.js
 
 1. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
 
-   - find right angle and multiplication
+   - REF: https://en.wikipedia.org/wiki/Heron%27s_formula#:~:text=In%20geometry%2C%20Heron's%20formula%20(sometimes,distances%20in%20the%20triangle%20first.
 
 2. Write a JavaScript program to compute the sum of cubes of all integer from 1 to a given integer.
 
