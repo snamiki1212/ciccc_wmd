@@ -29,22 +29,28 @@ const input = 3
 function takeRandomBetweenOneToTen() {
   const result = Math.round(Math.random() * 10)
 
-  // NOTE:
-  // it's not evenly random but easy way
+  // NOTE: it's not evenly random but easy way
   if(result <= 0 || result > 10) return 10 
   return result;
 }
-function runGame(input) {
+function getGameResult(input) {
   if(typeof input !=='number'  ) throw new Error ('input must be number');
   const taken = takeRandomBetweenOneToTen();
-  const result = input === taken ? 'Good Work' : "Not match";
+  return input === taken ? 'Good Work' : "Not match";
 }
-runGame(input)
+const gameResult = getGameResult(input)
+console.log(gameResult)
 
 // 5. Write a JavaScript program to replace all the numbers with a specified number of a given array of integers.
-//    - ([1,2,3,...], 7) => [7,7,7,...]
 function replace(list, elem) {
-  return list.map((_) => elem);
+  /** easy and common way */ 
+  // return list.map((_) => elem);
+
+  /** learned way */
+  for(let i = 0;i <list.length; i++){
+    list[i] = elem
+  }
+  return list
 }
 
 // 6. Write a JavaScript program that sorts a given array.
