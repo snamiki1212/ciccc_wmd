@@ -50,18 +50,27 @@ const customers = [
 ];
 
 // 9. Filter the customers array to show the customer with the most expensive order.
-function pickMostExpensiveOrder(list) {
-  // Way1
-  const max = Math.max(...list.map((e) => e.order));
-  const result = list.find((e) => e.order === max);
-  return result;
+/* Way1 */
+// function pickMostExpensiveOrder(list) {
+//   const max = Math.max(...list.map((e) => e.order));
+//   const result = list.find((e) => e.order === max);
+//   return result;
+// }
+// const r = pickMostExpensiveOrder(customers);
+// console.log(r);
 
-  // Way2
-  // let index = -1;
-  // let order = -1;
+/** Way2 */
+function pickMostExpensiveOrderIndex(list) {
+  let index = -1;
+  let order = -1;
 
-  // for(let )
-  // return list.max
+  list.forEach((value, key) => {
+    if (value.order > order) {
+      index = key;
+      order = value.order;
+    }
+  });
+  return index;
 }
-const r = pickMostExpensiveOrder(customers);
-console.log(r);
+const i = pickMostExpensiveOrderIndex(customers);
+console.log(customers[i]);
