@@ -20,8 +20,27 @@ function capitalize(str) {
   return str.toUpperCase();
 }
 
-// 4. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message &quot;Good Work&quot; otherwise display a message &quot;Not matched&quot;.
-//    - we input number
+// 4. Write a JavaScript program where the program takes a random
+//    integer between 1 to 10, the user is then prompted to input
+//    a guess number. If the user input matches with guess number,
+//    the program will display a message &quot;Good Work&quot;
+//    otherwise display a message &quot;Not matched&quot;.
+const input = 3
+function takeRandomBetweenOneToTen() {
+  const result = Math.round(Math.random() * 10)
+
+  // NOTE:
+  // it's not evenly random but easy way
+  if(result <= 0 || result > 10) return 10 
+  return result;
+}
+function runGame(input) {
+  if(typeof input !=='number'  ) throw new Error ('input must be number');
+  const taken = takeRandomBetweenOneToTen();
+  const result = input === taken ? 'Good Work' : "Not match";
+}
+runGame(input)
+
 // 5. Write a JavaScript program to replace all the numbers with a specified number of a given array of integers.
 //    - ([1,2,3,...], 7) => [7,7,7,...]
 function replace(list, elem) {
