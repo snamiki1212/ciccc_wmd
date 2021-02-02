@@ -1,3 +1,11 @@
+## Usage
+
+```zsh
+$ open index.html
+```
+
+## Tasks
+
 - [x] 1. Create an array of ‘meal’ objects, where each meal object consists of “name”, “prince” and “popularity” fields. Your array should of size 3 at least.
 - [x] 2. Using JavaScript, dynamically create a HTML table to display the contents of your array as follows:
 
