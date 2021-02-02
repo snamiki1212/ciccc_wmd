@@ -24,19 +24,32 @@
   const table = document.createElement('table')
   table.setAttribute('class', 'table')
 
+  function attachHoverEvent(elem) {
+    const className = 'focus'
+    elem.addEventListener('mouseover', (_elem) => {
+      elem.classList.toggle(className)
+    })
+    elem.addEventListener('mouseout', (_elem) => {
+      elem.classList.toggle(className)
+    })
+  }
   // header
   function createHeaderColumns() {
     nameColumn = document.createElement('td')
     nameColumn.innerHTML = 'Name'
     nameColumn.setAttribute('class', 'cell')
+    attachHoverEvent(nameColumn)
+
     // 
     priceColumn = document.createElement('td')
     priceColumn.innerHTML = 'Price'
     priceColumn.setAttribute('class', 'cell')
+    attachHoverEvent(priceColumn)
     // 
     popularityColumn = document.createElement('td')
     popularityColumn.innerHTML = 'Popularity'
     popularityColumn.setAttribute('class', 'cell')
+    attachHoverEvent(popularityColumn)
     // 
     return [nameColumn, priceColumn, popularityColumn]
   }
@@ -53,16 +66,19 @@
       nameColumn = document.createElement('td')
       nameColumn.innerHTML = name
       nameColumn.setAttribute('class', 'cell')
+      attachHoverEvent(nameColumn)
       row.appendChild(nameColumn)
       // 
       priceColumn = document.createElement('td')
       priceColumn.innerHTML = prince
       priceColumn.setAttribute('class', 'cell')
+      attachHoverEvent(priceColumn)
       row.appendChild(priceColumn)
       // 
       popularityColumn = document.createElement('td')
       popularityColumn.innerHTML = popularity
       popularityColumn.setAttribute('class', 'cell')
+      attachHoverEvent(popularityColumn)
       row.appendChild(popularityColumn)
       return row
     })
@@ -85,6 +101,11 @@
 
   .headerRow {
     font-weight: bold
+  }
+
+  .focus {
+    color: red;
+    background-color: pink;
   }
 
   .row {}
