@@ -25,7 +25,10 @@
 </body>
 <script>
   function clickHandle() {
-
+    const table = document.getElementById('table')
+    const child = document.createElement('p')
+    child.innerHTML = 'ok'
+    table.appendChild(child)
     console.log("ok")
   }
 
@@ -51,6 +54,7 @@
   const parent = document.getElementById('app')
   const table = document.createElement('table')
   table.setAttribute('class', 'table')
+  table.setAttribute('id', 'table')
 
   function attachHoverEvent(elem) {
     const className = 'focus'
@@ -87,31 +91,31 @@
   table.appendChild(headRow)
 
   // rows
-  function createRows(meals) {
-    return meals.map(({ name, prince, popularity }) => {
-      const row = document.createElement('tr')
-      // 
-      nameColumn = document.createElement('td')
-      nameColumn.innerHTML = name
-      nameColumn.setAttribute('class', 'cell')
-      attachHoverEvent(nameColumn)
-      row.appendChild(nameColumn)
-      // 
-      priceColumn = document.createElement('td')
-      priceColumn.innerHTML = prince
-      priceColumn.setAttribute('class', 'cell')
-      attachHoverEvent(priceColumn)
-      row.appendChild(priceColumn)
-      // 
-      popularityColumn = document.createElement('td')
-      popularityColumn.innerHTML = popularity
-      popularityColumn.setAttribute('class', 'cell')
-      attachHoverEvent(popularityColumn)
-      row.appendChild(popularityColumn)
-      return row
-    })
+  function createRow({ name, prince, popularity }) {
+    const row = document.createElement('tr')
+    // 
+    nameColumn = document.createElement('td')
+    nameColumn.innerHTML = name
+    nameColumn.setAttribute('class', 'cell')
+    attachHoverEvent(nameColumn)
+    row.appendChild(nameColumn)
+    // 
+    priceColumn = document.createElement('td')
+    priceColumn.innerHTML = prince
+    priceColumn.setAttribute('class', 'cell')
+    attachHoverEvent(priceColumn)
+    row.appendChild(priceColumn)
+    // 
+    popularityColumn = document.createElement('td')
+    popularityColumn.innerHTML = popularity
+    popularityColumn.setAttribute('class', 'cell')
+    attachHoverEvent(popularityColumn)
+    row.appendChild(popularityColumn)
+    return row
   }
-  createRows(meals).forEach(row => table.appendChild(row))
+  meals
+    .map(meal => createRow(meal))
+    .forEach(row => table.appendChild(row))
   parent.appendChild(table)
 
 </script>
