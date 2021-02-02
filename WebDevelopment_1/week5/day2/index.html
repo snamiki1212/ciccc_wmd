@@ -1,6 +1,34 @@
-<div id="app"></div>
+<!DOCTYPE html>
+<html>
 
+<body>
+  <div id="app">
+
+    <div class="form">
+      <div class="inputRow">
+        <label name="input__name">Name</label>
+        <input type="text" class="input" id="input__name" placeholder="e.g. bread" />
+      </div>
+      <div class="inputRow">
+        <label name="input__name">Price</label>
+        <input type=" number" class="input" id="input__price" placeholder="only number" />
+      </div>
+      <div class="inputRow">
+        <label name="input__name">Popularity</label>
+        <input type="number" class="input" id="input__poopularity" placeholder="between 0 and 5" />
+      </div>
+      <button onclick='clickHandle()'>insert</button>
+    </div>
+    <hr />
+  </div>
+
+</body>
 <script>
+  function clickHandle() {
+
+    console.log("ok")
+  }
+
   /**
    * No1
    */
@@ -108,5 +136,12 @@
     background-color: pink;
   }
 
+  .inputRow {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .row {}
 </style>
+
+</html>
