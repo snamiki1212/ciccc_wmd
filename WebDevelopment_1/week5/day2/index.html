@@ -11,7 +11,7 @@
       </div>
       <div class="inputRow">
         <label name="input__name">Price</label>
-        <input type=" number" class="input" id="input__price" placeholder="only number" />
+        <input type="number" class="input" id="input__price" placeholder="only number" />
       </div>
       <div class="inputRow">
         <label name="input__name">Popularity</label>
@@ -25,11 +25,27 @@
 </body>
 <script>
   function clickHandle() {
+
+    const nameDOM = document.getElementById('input__name')
+    if (!nameDOM) throw new Error("Cannot find name DOM")
+    const name = nameDOM.value
+    if (!name) throw new Error("Invalid input data: name should be inputted")
+
+    const priceDOM = document.getElementById('input__price')
+    if (!priceDOM) throw new Error("Cannot find priceDOM")
+    const price = parseInt(priceDOM.value)
+    if (price === 'NaN' || typeof price !== 'number' || price < 0) throw new Error("Invalid input data: price should be number")
+
+    const poopularityDOM = document.getElementById('input__poopularity')
+    if (!poopularityDOM) throw new Error("Cannot find poopularityDOM")
+    const popularity = parseInt(poopularityDOM.value)
+    if (typeof popularity !== 'number') throw new Error("Invalid input data: popularity should be number")
+    if (popularity < 0 || popularity > 5) throw new Error("Invalid input data: popularity should be range between 0 and 5")
+
+
     const table = document.getElementById('table')
-    const child = document.createElement('p')
-    child.innerHTML = 'ok'
-    table.appendChild(child)
-    console.log("ok")
+    const row = createRow({ name, prince: price, popularity })
+    table.appendChild(row)
   }
 
   /**
