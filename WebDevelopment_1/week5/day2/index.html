@@ -42,10 +42,15 @@
     if (typeof popularity !== 'number') throw new Error("Invalid input data: popularity should be number")
     if (popularity < 0 || popularity > 5) throw new Error("Invalid input data: popularity should be range between 0 and 5")
 
-
     const table = document.getElementById('table')
     const row = createRow({ name, prince: price, popularity })
     table.appendChild(row)
+
+    alert(`Inserted!
+    name: ${name}
+    price: ${price}
+    popularity: ${popularity}
+    `)
   }
 
   /**
