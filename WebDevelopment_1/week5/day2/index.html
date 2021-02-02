@@ -1,0 +1,64 @@
+<div id="app"></div>
+
+<script>
+  /**
+   * No1
+   */
+  function createMeal({ name, prince, popularity }) {
+    if (typeof prince !== 'number') throw new Error('prince should be number.')
+    if (typeof popularity !== 'number') throw new Error('poopularity should be number.')
+    if (popularity < 0 && popularity > 5) throw new Error('poopularity range is between 0 and 5.')
+    return { name, prince, popularity }
+  }
+  const meals = [
+    createMeal({ name: 'egg', prince: 2, popularity: 2 }),
+    createMeal({ name: 'bread', prince: 3, popularity: 3 }),
+    createMeal({ name: 'pasta', prince: 1, popularity: 4 }),
+  ]
+  console.log('meals:', meals)
+
+  /**
+   * No2
+   */
+  const parent = document.getElementById('app')
+
+  // table
+  const table = document.createElement('table')
+  const headRow = document.createElement('tr')
+
+  function createHeaderColumns() {
+    nameColumn = document.createElement('td')
+    nameColumn.innerHTML = 'Name'
+
+    priceColumn = document.createElement('td')
+    priceColumn.innerHTML = 'Price'
+
+    popularityColumn = document.createElement('td')
+    popularityColumn.innerHTML = 'Popularity'
+    return [nameColumn, priceColumn, popularityColumn]
+  }
+  createHeaderColumns().forEach(column => headRow.appendChild(column))
+  table.appendChild(headRow)
+
+  function createRows(meals) {
+    return meals.map(({ name, prince, popularity }) => {
+      const row = document.createElement('tr')
+      // 
+      nameColumn = document.createElement('td')
+      nameColumn.innerHTML = name
+      row.appendChild(nameColumn)
+      // 
+      priceColumn = document.createElement('td')
+      priceColumn.innerHTML = prince
+      row.appendChild(priceColumn)
+      // 
+      popularityColumn = document.createElement('td')
+      popularityColumn.innerHTML = popularity
+      row.appendChild(popularityColumn)
+      return row
+    })
+  }
+  createRows(meals).forEach(row => table.appendChild(row))
+
+  parent.appendChild(table)
+</script>
