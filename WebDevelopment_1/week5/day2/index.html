@@ -21,44 +21,71 @@
    * No2
    */
   const parent = document.getElementById('app')
-
-  // table
   const table = document.createElement('table')
-  const headRow = document.createElement('tr')
+  table.setAttribute('class', 'table')
 
+  // header
   function createHeaderColumns() {
     nameColumn = document.createElement('td')
     nameColumn.innerHTML = 'Name'
-
+    nameColumn.setAttribute('class', 'cell')
+    // 
     priceColumn = document.createElement('td')
     priceColumn.innerHTML = 'Price'
-
+    priceColumn.setAttribute('class', 'cell')
+    // 
     popularityColumn = document.createElement('td')
     popularityColumn.innerHTML = 'Popularity'
+    popularityColumn.setAttribute('class', 'cell')
+    // 
     return [nameColumn, priceColumn, popularityColumn]
   }
+  const headRow = document.createElement('tr')
+  headRow.setAttribute('class', 'headerRow')
   createHeaderColumns().forEach(column => headRow.appendChild(column))
   table.appendChild(headRow)
 
+  // rows
   function createRows(meals) {
     return meals.map(({ name, prince, popularity }) => {
       const row = document.createElement('tr')
       // 
       nameColumn = document.createElement('td')
       nameColumn.innerHTML = name
+      nameColumn.setAttribute('class', 'cell')
       row.appendChild(nameColumn)
       // 
       priceColumn = document.createElement('td')
       priceColumn.innerHTML = prince
+      priceColumn.setAttribute('class', 'cell')
       row.appendChild(priceColumn)
       // 
       popularityColumn = document.createElement('td')
       popularityColumn.innerHTML = popularity
+      popularityColumn.setAttribute('class', 'cell')
       row.appendChild(popularityColumn)
       return row
     })
   }
   createRows(meals).forEach(row => table.appendChild(row))
-
   parent.appendChild(table)
+
 </script>
+
+<style>
+  .cell {
+    border: 1px solid black;
+  }
+
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+
+  .headerRow {
+    font-weight: bold
+  }
+
+  .row {}
+</style>
