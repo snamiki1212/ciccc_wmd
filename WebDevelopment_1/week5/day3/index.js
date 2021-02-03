@@ -1,7 +1,8 @@
 function addition(x, y) {
   return x + y;
 }
-function addition(x) {
+
+function increment(x) {
   return ++x;
 }
 
@@ -19,4 +20,8 @@ function arrayOfMultiples(x,y){
 
 function toArray(obj){
   return Object.keys(obj).map(key => ([key, obj[key]]))
+}
+
+module.exports = {
+  addition, increment, minutes, arrayOfMultiples, toArray
 }
