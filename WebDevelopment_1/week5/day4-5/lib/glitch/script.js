@@ -25,7 +25,7 @@ $(document).ready(function () {
     const msg = MESSAGE
 
     $('.time').html(msg);
-    $('.time').attr('data-time', msg.toUpperCase());
+    $('.time').attr('data-time', msg);
 
   }, 1000);
 
