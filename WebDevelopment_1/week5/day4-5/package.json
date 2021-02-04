@@ -1,0 +1,9 @@
+{
+  "name": "day4-5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "stylus": "^0.54.8"
+  }
+}
