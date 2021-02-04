@@ -2,8 +2,12 @@
   "name": "day4-5",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build:glitch": "yarn stylus -w ./glitch/style.stylus -o ./glitch/style.css"
+  },
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "stylus": "^0.54.8"
   }
 }
