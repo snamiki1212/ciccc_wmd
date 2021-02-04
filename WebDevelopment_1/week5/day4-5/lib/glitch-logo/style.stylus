@@ -27,7 +27,7 @@ html,
 body
   height: 100%
 
-.glitch
+.glitch-logo
   font-family: 'Lato', sans-serif
   font-weight: 700
   background: $bg-color
@@ -134,7 +134,7 @@ a.switcher
   &.is-off
     animation: is-off 2s linear infinite !important
 
-.glitch
+.glitch-logo
   &:before
     position: absolute
     z-index: 999999
