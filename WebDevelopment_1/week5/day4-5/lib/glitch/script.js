@@ -1,3 +1,5 @@
+const MESSAGE = `Nash`
+
 $(document).ready(function () {
 
   function second_passed() {
@@ -11,19 +13,19 @@ $(document).ready(function () {
   });
 
 
-  var newDate = new Date();
+  const newDate = new Date();
   newDate.setDate(newDate.getDate());
 
   setInterval( function() {
+    // const hours    = new Date().getHours();
+    // const seconds  = new Date().getSeconds();
+    // const minutes  = new Date().getMinutes();
+    // const realTime = ( hours < 10 ? '0' : '' ) + hours + ' : ' + ( minutes < 10 ? '0' : '' ) + minutes + ' : ' + ( seconds < 10 ? '0' : '' ) + seconds
 
-    var hours    = new Date().getHours();
-    var seconds  = new Date().getSeconds();
-    var minutes  = new Date().getMinutes();
+    const msg = MESSAGE
 
-    var realTime = ( hours < 10 ? '0' : '' ) + hours + ' : ' + ( minutes < 10 ? '0' : '' ) + minutes + ' : ' + ( seconds < 10 ? '0' : '' ) + seconds
-
-    $('.time').html(realTime);
-    $('.time').attr('data-time', realTime);
+    $('.time').html(msg);
+    $('.time').attr('data-time', msg.toUpperCase());
 
   }, 1000);
 
