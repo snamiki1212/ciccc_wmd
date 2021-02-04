@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:glitch": "yarn stylus -w ./glitch/style.stylus -o ./glitch/style.css"
+    "build:glitch": "yarn stylus -w ./lib/glitch/style.stylus -o ./lib/glitch/style.css"
   },
   "license": "MIT",
   "dependencies": {},
