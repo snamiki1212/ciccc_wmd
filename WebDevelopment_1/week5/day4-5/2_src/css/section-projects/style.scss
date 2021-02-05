@@ -1,0 +1,14 @@
+.section-projects-header {
+}
+
+.section-projects {
+  display: flex;
+  gap: 2rem;
+  border: 1px solid black;
+  &__block {
+  }
+}
+
+.project-img {
+  object-fit: cover;
+}
