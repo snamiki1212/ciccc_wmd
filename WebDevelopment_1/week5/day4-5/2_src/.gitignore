@@ -1,2 +1,6 @@
+# packages
 /node_modules
+
+# css
 *.css*
+!reset.css
