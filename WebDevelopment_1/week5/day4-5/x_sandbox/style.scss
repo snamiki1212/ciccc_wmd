@@ -18,6 +18,18 @@ body {
   font-size: 4rem;
   animation: glitch-skew 0.5s infinite linear alternate-reverse;
 }
+.font1 {
+  font-family: "Stalinist One";
+}
+.font2 {
+  font-family: "Audiowide";
+}
+.font3 {
+  font-family: "Monoton";
+}
+.font4 {
+  font-family: "Press Start 2P";
+}
 
 .glitch::before,
 .glitch::after {
