@@ -30,6 +30,9 @@ body {
 .font4 {
   font-family: "Press Start 2P";
 }
+.font5 {
+  font-family: "Megrim";
+}
 
 .glitch::before,
 .glitch::after {
@@ -45,7 +48,7 @@ body {
   left: 2px;
   text-shadow: -3px 0 var(--glitch-color-2);
   background: black;
-  clip: rect(0px, 450px, 30px, 0);
+  clip: rect(0, 100%, 10%, 0);
   animation: noise-anim-1 2s infinite linear alternate-reverse;
 }
 
@@ -53,7 +56,7 @@ body {
   left: -2px;
   text-shadow: -3px 0 var(--glitch-color-1);
   background: black;
-  clip: rect(44px, 450px, 56px, 0);
+  clip: rect(70%, 100%, 100%, 0);
   animation: noise-anim-2 2s infinite linear alternate-reverse;
 }
 
