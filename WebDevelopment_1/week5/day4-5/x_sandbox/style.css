@@ -15,8 +15,10 @@ body {
 .glitch {
   position: relative;
   color: white;
-  font-size: 4rem;
-  animation: glitch-skew 0.5s infinite linear alternate-reverse;
+  font-size: 2rem;
+  /* animation: glitch-skew 0.5s infinite linear alternate-reverse; */
+  font-family: "Stalinist One";
+  display: inline-block;
 }
 
 .glitch::before,
@@ -30,18 +32,18 @@ body {
 }
 
 .glitch::before {
-  left: 2px;
-  text-shadow: -3px 0 var(--glitch-color-2);
+  left: 3px;
+  text-shadow: -2px 0 var(--glitch-color-2);
   background: black;
-  clip: rect(0px, 450px, 30px, 0);
+  clip: rect(0px, 100%, 20%, 0);
   animation: noise-anim-1 2s infinite linear alternate-reverse;
 }
 
 .glitch::after {
-  left: -2px;
-  text-shadow: -3px 0 var(--glitch-color-1);
+  left: -3px;
+  text-shadow: -1px 0 var(--glitch-color-1);
   background: black;
-  clip: rect(44px, 450px, 56px, 0);
+  clip: rect(20%, 100%, 50%, 0);
   animation: noise-anim-2 2s infinite linear alternate-reverse;
 }
 
