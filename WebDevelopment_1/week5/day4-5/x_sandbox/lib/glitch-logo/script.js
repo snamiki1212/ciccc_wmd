@@ -1,4 +1,4 @@
-const MESSAGE = `Nash`;
+const MESSAGE = `NASH`;
 
 $(document).ready(function () {
   function second_passed() {
