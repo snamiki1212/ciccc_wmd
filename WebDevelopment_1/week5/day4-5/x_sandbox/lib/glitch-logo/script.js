@@ -1,28 +1,22 @@
-const MESSAGE = `NASH`;
+const MESSAGE = `nash`;
 
-$(document).ready(function () {
-  function second_passed() {
-    $(".clock").removeClass("is-off");
-  }
-  setTimeout(second_passed, 2000);
-
-  $(".switcher").on("click", function (e) {
-    e.preventDefault();
-    $(".screen").toggleClass("glitch-logo");
-  });
-
-  const newDate = new Date();
-  newDate.setDate(newDate.getDate());
+window.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    const klass = 'clock'
+    const klassRemoved = 'is-off'
+    const elements = document.getElementsByClassName(klass)
+    for(let i =0; i<elements.length; i++){
+      elements[i].classList.remove(klassRemoved)
+    }
+  }, 2000);
 
   setInterval(function () {
-    // const hours    = new Date().getHours();
-    // const seconds  = new Date().getSeconds();
-    // const minutes  = new Date().getMinutes();
-    // const realTime = ( hours < 10 ? '0' : '' ) + hours + ' : ' + ( minutes < 10 ? '0' : '' ) + minutes + ' : ' + ( seconds < 10 ? '0' : '' ) + seconds
-
     const msg = MESSAGE;
-
-    $(".time").html(msg);
-    $(".time").attr("data-time", msg);
+    const klass = "time";
+    let elements = document.getElementsByClassName(klass);
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].innerHTML = msg;
+      elements[i].setAttribute("data-time", msg);
+    }
   }, 1000);
 });

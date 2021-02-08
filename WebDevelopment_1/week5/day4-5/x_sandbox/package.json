@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:stylus": "yarn stylus ./lib/glitch/style.stylus -o ./lib/glitch/style.css",
+    "build:stylus": "yarn stylus ./lib/glitch-logo/style.stylus -o ./lib/glitch-logo/style.css",
     "build:sass": "yarn sass ./lib/* .",
     "build:css": "yarn build:stylus && yarn build:sass"
   },
