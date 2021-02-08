@@ -1,22 +1,21 @@
-const MESSAGE = `nash`;
+const MESSAGE = `NASH`;
+const CLOCK_CLASS = 'clock'
+const REMOVED_CLASS = 'is-off'
+const TIME_CLASS = "time";
 
 window.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
-    const klass = 'clock'
-    const klassRemoved = 'is-off'
-    const elements = document.getElementsByClassName(klass)
+    const elements = document.getElementsByClassName(CLOCK_CLASS)
     for(let i =0; i<elements.length; i++){
-      elements[i].classList.remove(klassRemoved)
+      elements[i].classList.remove(REMOVED_CLASS)
     }
   }, 2000);
 
   setInterval(function () {
-    const msg = MESSAGE;
-    const klass = "time";
-    let elements = document.getElementsByClassName(klass);
+    let elements = document.getElementsByClassName(TIME_CLASS);
     for (let i = 0; i < elements.length; i++) {
-      elements[i].innerHTML = msg;
-      elements[i].setAttribute("data-time", msg);
+      elements[i].innerHTML = MESSAGE;
+      elements[i].setAttribute("data-time", MESSAGE);
     }
   }, 1000);
 });
