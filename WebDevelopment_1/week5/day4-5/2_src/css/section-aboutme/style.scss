@@ -3,8 +3,8 @@
   grid-template-rows: auto auto;
   grid-template-columns: auto 1fr;
   grid-template-areas:
-    "title  title      "
-    "avator description";
+    "title       title "
+    "description avator";
 
   border: solid black 1px;
 
