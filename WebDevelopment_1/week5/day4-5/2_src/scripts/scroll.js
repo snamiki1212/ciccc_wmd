@@ -2,14 +2,10 @@ const HIDDEN_CLASS = "hidden";
 const EASE_IN_ANIME_CLASS = "ease-in";
 const FADE_IN_DOWN_ANIME_CLASS = "fadeInDown";
 const TARGET_CLASS_LIST = [
-  //sections
   ".section-aboutme",
   ".section-contact",
   ".section-experiences",
   ".section-projects",
-
-  // etc
-  ".footer__message",
 ];
 
 const selectors = TARGET_CLASS_LIST.join(",");
@@ -48,5 +44,9 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  console.log("hey");
+  
 });
+
+const GITHUB_URL = 'https://github.com/snamiki1212' // TODO:
+
+console.log(`🦊🐶🐱🦊🐶🐱🦊🐶🐱\n🦊🐶🐱🦊🐶🐱🦊🐶🐱\n🦊🐶🐱🦊🐶🐱🦊🐶🐱\nHi :)\nYou want to deep into this site?\n Go GitHub =>\n ${GITHUB_URL} \n🦊🐶🐱🦊🐶🐱🦊🐶🐱\n🦊🐶🐱🦊🐶🐱🦊🐶🐱\n🦊🐶🐱🦊🐶🐱🦊🐶🐱`);
