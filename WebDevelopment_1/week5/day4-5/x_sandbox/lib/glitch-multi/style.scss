@@ -11,21 +11,12 @@
   visibility: hidden;
 }
 
-.text-wrapper:not(.placeholder) {
-  $n: 5;
-  $glitchSpan: 1px;
-  position: absolute;
-  top: 0;
-  left: 0;
+$glitchSpan: 1px;
+
+@mixin slice-vertical($sliceNum) {
   width: 100%;
-  height: (100% / $n);
-  overflow: hidden;
-  & > p {
-    position: absolute;
-    top: 0;
-    white-space: nowrap;
-  }
-  @for $i from 1 through $n {
+  height: (100% / $sliceNum);
+  @for $i from 1 through $sliceNum {
     &:nth-of-type(#{$i}) {
       left: $i * $glitchSpan;
 
@@ -33,10 +24,60 @@
         left: $i * -$glitchSpan;
       }
 
-      top: ($i - 1) * (100% / $n);
+      top: ($i - 1) * (100% / $sliceNum);
       & > p {
         top: -(($i - 1) * 100%);
       }
     }
   }
+}
+
+@mixin slice-horizontal($sliceNum) {
+  width: (100% / $sliceNum);
+  height: 100%;
+  @for $i from 1 through $sliceNum {
+    &:nth-of-type(#{$i}) {
+      top: $i * $glitchSpan;
+
+      @if ($i % 2 == 0) {
+        top: $i * -$glitchSpan;
+      }
+
+      left: ($i - 1) * (100% / $sliceNum);
+      & > p {
+        left: -(($i - 1) * 100%);
+      }
+    }
+  }
+}
+
+@mixin text-wrapper-base() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  & > p {
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+}
+
+.text-wrapper:not(.placeholder) {
+  $sliceNum: 5;
+  @include text-wrapper-base();
+
+  /**
+   ** Switch here
+   **/
+  @include slice-vertical($sliceNum);
+  // // or
+  // @include slice-horizontal($sliceNum);
+}
+
+//
+h2 {
+  background: blue;
+  color: white;
+  padding: 1rem;
 }

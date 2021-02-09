@@ -15,9 +15,12 @@
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
+  /**
+   ** Switch here
+   **/
   width: 100%;
   height: 20%;
-  overflow: hidden;
 }
 .text-wrapper:not(.placeholder) > p {
   position: absolute;
@@ -60,6 +63,12 @@
 }
 .text-wrapper:not(.placeholder):nth-of-type(5) > p {
   top: -400%;
+}
+
+h2 {
+  background: blue;
+  color: white;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
