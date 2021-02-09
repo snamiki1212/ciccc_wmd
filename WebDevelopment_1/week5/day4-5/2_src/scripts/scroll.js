@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
         });
         observer.unobserve(entry.target);
       } else {
-        console.log("test")
+        // NOTE: when to load this page, immidiately execute(REF: https://stackoverflow.com/questions/53214116/intersectionobserver-callback-firing-immediately-on-page-load)
         elements.forEach((elem) => {
           elem.classList.add(HIDDEN_CLASS);
           elem.classList.remove(FADE_IN_DOWN_ANIME_CLASS);
