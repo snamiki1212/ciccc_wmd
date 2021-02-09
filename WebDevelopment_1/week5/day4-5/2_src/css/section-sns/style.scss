@@ -1,3 +1,5 @@
+@import "../animation/style";
+
 .section-sns {
   display: flex;
   flex-direction: column;
@@ -9,4 +11,6 @@
   & > a {
     font-size: 1.5rem;
   }
+
+  animation: fadeInDown 1s;
 }
