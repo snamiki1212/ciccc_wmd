@@ -18,6 +18,9 @@
 
   &__description {
     grid-area: description;
+    & > p {
+      margin-bottom: 1rem;
+    }
   }
 }
 
