@@ -1,0 +1,40 @@
+.wrapper {
+  position: absolute;
+}
+
+.text-wrapper {
+  font-size: 2rem;
+}
+
+.text-wrapper.placeholder {
+  visibility: hidden;
+}
+
+.text-wrapper:not(.placeholder) {
+  $n: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: (100% / $n);
+  overflow: hidden;
+  & > p {
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  @for $i from 1 through $n {
+    &:nth-of-type(#{$i}) {
+      left: $i * 1px;
+
+      @if ($i % 2 == 0) {
+        left: $i * 2px;
+      }
+
+      top: ($i - 1) * (100% / $n);
+      & > p {
+        top: -(($i - 1) * 100%);
+      }
+    }
+  }
+}
