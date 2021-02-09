@@ -13,6 +13,7 @@
 
 .text-wrapper:not(.placeholder) {
   $n: 5;
+  $glitchSpan: 1px;
   position: absolute;
   top: 0;
   left: 0;
@@ -26,10 +27,10 @@
   }
   @for $i from 1 through $n {
     &:nth-of-type(#{$i}) {
-      left: $i * 1px;
+      left: $i * $glitchSpan;
 
       @if ($i % 2 == 0) {
-        left: $i * 2px;
+        left: $i * -$glitchSpan;
       }
 
       top: ($i - 1) * (100% / $n);

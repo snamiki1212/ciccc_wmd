@@ -33,7 +33,7 @@
 }
 .text-wrapper:not(.placeholder):nth-of-type(2) {
   left: 2px;
-  left: 4px;
+  left: -2px;
   top: 20%;
 }
 .text-wrapper:not(.placeholder):nth-of-type(2) > p {
@@ -48,7 +48,7 @@
 }
 .text-wrapper:not(.placeholder):nth-of-type(4) {
   left: 4px;
-  left: 8px;
+  left: -4px;
   top: 60%;
 }
 .text-wrapper:not(.placeholder):nth-of-type(4) > p {
