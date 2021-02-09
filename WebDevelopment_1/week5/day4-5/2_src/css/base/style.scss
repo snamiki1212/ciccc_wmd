@@ -13,9 +13,13 @@
   --yellow: yellow;
 }
 
+@mixin background-anime() {
+}
+
 body {
   background: var(--dark-transparent);
   color: var(--gray-100);
+  letter-spacing: 0.05rem;
   font-family: "Open Sans";
 
   /* background-animation */
