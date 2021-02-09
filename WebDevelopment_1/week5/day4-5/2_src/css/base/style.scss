@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+
 :root {
   /* base */
   --black: black;
@@ -13,7 +15,7 @@
 
 body {
   background: var(--dark-transparent);
-  color: var(--white);
+  color: var(--gray-100);
   font-family: "Open Sans";
 
   /* background-animation */

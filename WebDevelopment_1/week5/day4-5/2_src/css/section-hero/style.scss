@@ -1,0 +1,31 @@
+@import "https://fonts.googleapis.com/css?family=Reenie+Beanie|Megrim";
+
+.section-hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--magenta);
+    font-family: "Megrim";
+    // TODO: here glitch
+  }
+  &__description {
+    font-size: 3rem;
+    font-family: "Reenie Beanie";
+    color: var(--white);
+  }
+  &__message {
+    font-size: 3rem;
+    font-family: "Reenie Beanie";
+    color: var(--yellow);
+  }
+
+  &__point {
+    color: var(--magenta);
+  }
+}
