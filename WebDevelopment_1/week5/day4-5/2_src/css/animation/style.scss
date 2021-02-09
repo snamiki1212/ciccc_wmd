@@ -1,0 +1,17 @@
+@keyframes easeanime {
+  0% {
+    transform: translateX(9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.ease-in {
+  animation: easeanime 1s ease 0s;
+  color: red;
+}
