@@ -1,5 +1,8 @@
 const HIDDEN_CLASS = "hidden";
 const EASE_IN_ANIME_CLASS = "ease-in";
+const FADE_IN_DOWN_ANIME_CLASS = 'fadeInDown'
+
+
 
 window.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver(
@@ -11,12 +14,12 @@ window.addEventListener("DOMContentLoaded", () => {
         if (isInViewport) {
           elements.forEach((elem) => {
             elem.classList.remove(HIDDEN_CLASS);
-            elem.classList.add(EASE_IN_ANIME_CLASS);
+            elem.classList.add(FADE_IN_DOWN_ANIME_CLASS);
           });
         } else {
           elements.forEach((elem) => {
             elem.classList.add(HIDDEN_CLASS);
-            elem.classList.remove(EASE_IN_ANIME_CLASS);
+            elem.classList.remove(FADE_IN_DOWN_ANIME_CLASS);
           });
         }
       });
@@ -26,7 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   );
 
-  document.querySelectorAll(".footer").forEach((elem) => {
+  document.querySelectorAll(".footer__message").forEach((elem) => {
     observer.observe(elem);
   });
 
