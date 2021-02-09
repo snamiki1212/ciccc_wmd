@@ -5,6 +5,7 @@
   position: fixed;
   bottom: 10%;
   left: 1.5rem;
+  z-index: 999; // NOTE: TOP position
   & > a {
     font-size: 1.5rem;
   }
