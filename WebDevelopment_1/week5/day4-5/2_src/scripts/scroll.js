@@ -19,7 +19,7 @@ const options = {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  const createCallback = (selector) => (entries) => {
+  const createCallback = (selector) => (entries, observer) => {
     entries.forEach((entry) => {
       const elements = document.querySelectorAll(selector);
 
@@ -29,7 +29,9 @@ window.addEventListener("DOMContentLoaded", () => {
           elem.classList.remove(HIDDEN_CLASS);
           elem.classList.add(FADE_IN_DOWN_ANIME_CLASS);
         });
+        observer.unobserve(entry.target);
       } else {
+        console.log("test")
         elements.forEach((elem) => {
           elem.classList.add(HIDDEN_CLASS);
           elem.classList.remove(FADE_IN_DOWN_ANIME_CLASS);
