@@ -2,6 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  &__title {
+    //
+  }
+  &__projectList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .project {
@@ -10,17 +19,15 @@
   justify-content: center;
   gap: 2rem;
   border: 1px solid black;
-  &__block {
-    width: 30%;
-  }
 }
 
 .project-description {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 50%;
 
-  &__title {
+  &__img {
     //
   }
   &__text {
@@ -40,5 +47,6 @@
 }
 
 .project-img {
+  width: 100%;
   object-fit: cover;
 }
