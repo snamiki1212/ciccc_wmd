@@ -1,13 +1,13 @@
 @import "https://fonts.googleapis.com/css?family=Reenie+Beanie";
 .footer {
-  height: 50vh;
+  min-height: 50vh;
   background: var(--black);
   opacity: 0.7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   &__message {
-    padding: 5rem;
+    margin: 5rem;
     font-family: "Reenie Beanie";
     font-size: 3rem;
   }
