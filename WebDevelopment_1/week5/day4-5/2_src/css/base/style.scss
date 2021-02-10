@@ -10,9 +10,11 @@
 
   /* vivid */
   --cyan: cyan;
+  --cyan-transparent-05: rgb(0, 255, 255, 0.5);
   --magenta: magenta;
   --magenta-transparent-01: rgb(255, 0, 255, 0.1);
   --yellow: yellow;
+  --yellow-transparent-05: rgb(255, 255, 0, 0.5);
 }
 
 html {

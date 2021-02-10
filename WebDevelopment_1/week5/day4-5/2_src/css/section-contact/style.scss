@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Shojumaru";
 .section-contact {
   height: 50vh;
   display: flex;
@@ -13,12 +12,5 @@
     & > a {
       text-decoration: none;
     }
-  }
-
-  &__message {
-    font-family: "Shojumaru";
-    font-size: 1.5rem;
-    color: var(--yellow);
-    opacity: 0.6;
   }
 }
