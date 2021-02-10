@@ -1,9 +1,24 @@
+@import "https://fonts.googleapis.com/css?family=Shojumaru";
 .section-contact {
   height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 
   &__body {
-    margin-top: 3rem;
     text-align: center;
     font-size: 3rem;
+    & > a {
+      text-decoration: none;
+    }
+  }
+
+  &__message {
+    font-family: "Shojumaru";
+    font-size: 1.5rem;
+    color: var(--yellow);
+    opacity: 0.6;
   }
 }
