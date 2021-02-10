@@ -1,0 +1,737 @@
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie");
+@keyframes is-off {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  56% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 1;
+  }
+  71% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  72% {
+    transform: scaleY(3) skewX(-60deg);
+  }
+  73% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  91% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+    color: var(--txt-color);
+  }
+  92% {
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
+    color: green;
+  }
+  93% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+    color: var(--txt-color);
+  }
+}
+@keyframes c1 {
+  0% {
+    clip: rect(54 px, 9999px, 83 px, 0);
+  }
+  5% {
+    clip: rect(1 px, 9999px, 63 px, 0);
+  }
+  10% {
+    clip: rect(44 px, 9999px, 85 px, 0);
+  }
+  15% {
+    clip: rect(73 px, 9999px, 92 px, 0);
+  }
+  20% {
+    clip: rect(68 px, 9999px, 79 px, 0);
+  }
+  25% {
+    clip: rect(24 px, 9999px, 35 px, 0);
+  }
+  30% {
+    clip: rect(20 px, 9999px, 83 px, 0);
+  }
+  35% {
+    clip: rect(30 px, 9999px, 65 px, 0);
+  }
+  40% {
+    clip: rect(84 px, 9999px, 74 px, 0);
+  }
+  45% {
+    clip: rect(11 px, 9999px, 77 px, 0);
+  }
+  50% {
+    clip: rect(34 px, 9999px, 61 px, 0);
+  }
+  55% {
+    clip: rect(7 px, 9999px, 82 px, 0);
+  }
+  60% {
+    clip: rect(86 px, 9999px, 33 px, 0);
+  }
+  65% {
+    clip: rect(5 px, 9999px, 22 px, 0);
+  }
+  70% {
+    clip: rect(33 px, 9999px, 43 px, 0);
+  }
+  75% {
+    clip: rect(13 px, 9999px, 11 px, 0);
+  }
+  80% {
+    clip: rect(90 px, 9999px, 64 px, 0);
+  }
+  85% {
+    clip: rect(53 px, 9999px, 71 px, 0);
+  }
+  90% {
+    clip: rect(50 px, 9999px, 82 px, 0);
+  }
+  95% {
+    clip: rect(29 px, 9999px, 70 px, 0);
+  }
+  100% {
+    clip: rect(99 px, 9999px, 19 px, 0);
+  }
+}
+@keyframes c1 {
+  0% {
+    clip: rect(56 px, 9999px, 82 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  5% {
+    clip: rect(20 px, 9999px, 53 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  10% {
+    clip: rect(21 px, 9999px, 46 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  15% {
+    clip: rect(1 px, 9999px, 45 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  20% {
+    clip: rect(5 px, 9999px, 69 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  25% {
+    clip: rect(46 px, 9999px, 46 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  30% {
+    clip: rect(85 px, 9999px, 32 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  35% {
+    clip: rect(4 px, 9999px, 11 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  40% {
+    clip: rect(42 px, 9999px, 69 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  45% {
+    clip: rect(82 px, 9999px, 19 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  50% {
+    clip: rect(84 px, 9999px, 53 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  55% {
+    clip: rect(25 px, 9999px, 92 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  60% {
+    clip: rect(37 px, 9999px, 23 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  65% {
+    clip: rect(89 px, 9999px, 78 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  70% {
+    clip: rect(66 px, 9999px, 15 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  75% {
+    clip: rect(45 px, 9999px, 9 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  80% {
+    clip: rect(9 px, 9999px, 77 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  85% {
+    clip: rect(5 px, 9999px, 86 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  90% {
+    clip: rect(2 px, 9999px, 14 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  95% {
+    clip: rect(96 px, 9999px, 31 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  100% {
+    clip: rect(74 px, 9999px, 66 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+}
+@keyframes clock-bag {
+  0% {
+    transform: translate(1 px, 1 px);
+  }
+  2% {
+    transform: translate(2 px, 2 px);
+  }
+  4% {
+    transform: translate(1 px, 3 px);
+  }
+  6% {
+    transform: translate(2 px, 1 px);
+  }
+  8% {
+    transform: translate(2 px, 2 px);
+  }
+  10% {
+    transform: translate(3 px, 2 px);
+  }
+  12% {
+    transform: translate(2 px, 3 px);
+  }
+  14% {
+    transform: translate(1 px, 3 px);
+  }
+  16% {
+    transform: translate(3 px, 2 px);
+  }
+  18% {
+    transform: translate(3 px, 1 px);
+  }
+  20% {
+    transform: translate(3 px, 2 px);
+  }
+  22% {
+    transform: translate(1 px, 1 px);
+  }
+  24% {
+    transform: translate(2 px, 1 px);
+  }
+  26% {
+    transform: translate(3 px, 3 px);
+  }
+  28% {
+    transform: translate(1 px, 3 px);
+  }
+  30% {
+    transform: translate(2 px, 3 px);
+  }
+  32% {
+    transform: translate(1 px, 2 px);
+  }
+  34% {
+    transform: translate(1 px, 2 px);
+  }
+  36% {
+    transform: translate(3 px, 2 px);
+  }
+  38% {
+    transform: translate(3 px, 3 px);
+  }
+  40% {
+    transform: translate(1 px, 2 px);
+  }
+  42% {
+    transform: translate(1 px, 2 px);
+  }
+  44% {
+    transform: translate(3 px, 2 px);
+  }
+  46% {
+    transform: translate(1 px, 1 px);
+  }
+  48% {
+    transform: translate(1 px, 3 px);
+  }
+  50% {
+    transform: translate(2 px, 3 px);
+  }
+  52% {
+    transform: translate(1 px, 1 px);
+  }
+  54% {
+    transform: translate(3 px, 3 px);
+  }
+  56% {
+    transform: translate(2 px, 1 px);
+  }
+  58% {
+    transform: translate(1 px, 1 px);
+  }
+  60% {
+    transform: translate(1 px, 1 px);
+  }
+  62% {
+    transform: translate(3 px, 1 px);
+  }
+  64% {
+    transform: translate(1 px, 1 px);
+  }
+  66% {
+    transform: translate(1 px, 3 px);
+  }
+  68% {
+    transform: translate(3 px, 3 px);
+  }
+  70% {
+    transform: translate(2 px, 3 px);
+  }
+  72% {
+    transform: translate(3 px, 3 px);
+  }
+  74% {
+    transform: translate(2 px, 2 px);
+  }
+  76% {
+    transform: translate(2 px, 3 px);
+  }
+  78% {
+    transform: translate(1 px, 2 px);
+  }
+  80% {
+    transform: translate(2 px, 2 px);
+  }
+  82% {
+    transform: translate(3 px, 1 px);
+  }
+  84% {
+    transform: translate(2 px, 1 px);
+  }
+  86% {
+    transform: translate(2 px, 3 px);
+  }
+  88% {
+    transform: translate(1 px, 1 px);
+  }
+  90% {
+    transform: translate(3 px, 2 px);
+  }
+  92% {
+    transform: translate(3 px, 2 px);
+  }
+  94% {
+    transform: translate(2 px, 1 px);
+  }
+  96% {
+    transform: translate(2 px, 2 px);
+  }
+  98% {
+    transform: translate(1 px, 3 px);
+  }
+  100% {
+    transform: translate(2 px, 3 px);
+  }
+  1% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  1.5% {
+    transform: scaleY(3) skewX(-60deg);
+  }
+  2% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  51% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+  52% {
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
+  }
+  53% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+}
+@keyframes tr-bag {
+  0% {
+    transform: translate(4 px, 2 px);
+  }
+  2% {
+    transform: translate(2 px, 3 px);
+  }
+  4% {
+    transform: translate(3 px, 3 px);
+  }
+  6% {
+    transform: translate(1 px, 1 px);
+  }
+  8% {
+    transform: translate(3 px, 1 px);
+  }
+  10% {
+    transform: translate(5 px, 3 px);
+  }
+  12% {
+    transform: translate(4 px, 3 px);
+  }
+  14% {
+    transform: translate(4 px, 3 px);
+  }
+  16% {
+    transform: translate(2 px, 4 px);
+  }
+  18% {
+    transform: translate(1 px, 4 px);
+  }
+  20% {
+    transform: translate(3 px, 4 px);
+  }
+  22% {
+    transform: translate(3 px, 5 px);
+  }
+  24% {
+    transform: translate(1 px, 3 px);
+  }
+  26% {
+    transform: translate(3 px, 1 px);
+  }
+  28% {
+    transform: translate(1 px, 1 px);
+  }
+  30% {
+    transform: translate(5 px, 5 px);
+  }
+  32% {
+    transform: translate(3 px, 4 px);
+  }
+  34% {
+    transform: translate(4 px, 2 px);
+  }
+  36% {
+    transform: translate(2 px, 5 px);
+  }
+  38% {
+    transform: translate(1 px, 4 px);
+  }
+  40% {
+    transform: translate(2 px, 1 px);
+  }
+  42% {
+    transform: translate(1 px, 2 px);
+  }
+  44% {
+    transform: translate(4 px, 4 px);
+  }
+  46% {
+    transform: translate(4 px, 2 px);
+  }
+  48% {
+    transform: translate(2 px, 4 px);
+  }
+  50% {
+    transform: translate(1 px, 1 px);
+  }
+  52% {
+    transform: translate(2 px, 1 px);
+  }
+  54% {
+    transform: translate(4 px, 1 px);
+  }
+  56% {
+    transform: translate(4 px, 4 px);
+  }
+  58% {
+    transform: translate(1 px, 3 px);
+  }
+  60% {
+    transform: translate(5 px, 3 px);
+  }
+  62% {
+    transform: translate(5 px, 3 px);
+  }
+  64% {
+    transform: translate(4 px, 3 px);
+  }
+  66% {
+    transform: translate(5 px, 3 px);
+  }
+  68% {
+    transform: translate(5 px, 4 px);
+  }
+  70% {
+    transform: translate(4 px, 4 px);
+  }
+  72% {
+    transform: translate(4 px, 4 px);
+  }
+  74% {
+    transform: translate(4 px, 4 px);
+  }
+  76% {
+    transform: translate(4 px, 4 px);
+  }
+  78% {
+    transform: translate(2 px, 1 px);
+  }
+  80% {
+    transform: translate(3 px, 4 px);
+  }
+  82% {
+    transform: translate(2 px, 3 px);
+  }
+  84% {
+    transform: translate(4 px, 3 px);
+  }
+  86% {
+    transform: translate(3 px, 2 px);
+  }
+  88% {
+    transform: translate(4 px, 2 px);
+  }
+  90% {
+    transform: translate(1 px, 3 px);
+  }
+  92% {
+    transform: translate(2 px, 4 px);
+  }
+  94% {
+    transform: translate(2 px, 1 px);
+  }
+  96% {
+    transform: translate(3 px, 5 px);
+  }
+  98% {
+    transform: translate(2 px, 2 px);
+  }
+  100% {
+    transform: translate(3 px, 5 px);
+  }
+  1% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  1.5% {
+    transform: scaleY(3) skewX(-60deg);
+  }
+  2% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  51% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+  52% {
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
+  }
+  53% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+}
+@keyframes bg-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -32px;
+  }
+}
+.figure,
+.figure-mask {
+  transform: skewX(0deg) scaleY(1);
+  animation: tr-bag 4s linear infinite;
+}
+
+.figure {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-top: 200px solid var(--txt-color);
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  border-bottom: 0 solid transparent;
+}
+
+.figure:before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 99;
+  width: 0;
+  height: 0;
+  top: -194px;
+  left: -90px;
+  margin: auto;
+  border-top: 180px solid var(--bg-color);
+  border-right: 90px solid transparent;
+  border-left: 90px solid transparent;
+  border-bottom: 0 solid transparent;
+}
+
+.figure-mask {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-top: 200px solid transparent;
+  border-right: 100px solid var(--bg-color);
+  border-left: 100px solid var(--bg-color);
+  border-bottom: 0 solid transparent;
+}
+
+:root {
+  --bg-color: #111;
+  --txt-color: #fff;
+  --color-c1: magenta;
+  --color-c2: cyan;
+  --offset-c1: 3;
+  --offset-c2: 2;
+  --lay-c1: 2;
+  --lay-c2: 2;
+}
+
+.glitch-wrapper {
+  background: #111;
+  color: #fff;
+  display: inline-block;
+  font-family: "Reenie Beanie";
+}
+
+.glitch-wrapper:before {
+  position: absolute;
+  z-index: 999999;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.screen {
+  position: relative;
+  z-index: 1;
+}
+
+.text-wrapper {
+  z-index: 9;
+  text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: default;
+  transform: skewX(0deg) scaleY(1);
+  animation: clock-bag 4s linear infinite;
+  font-family: "Reenie Beanie";
+}
+
+.is-off {
+  animation: is-off 2s linear infinite !important;
+}
+
+.text {
+  font-family: "Reenie Beanie";
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.text:before,
+.text:after {
+  display: block;
+  content: attr(data-time);
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: #111;
+  width: 100%;
+  clip: rect(0, 100%, 0, 0);
+  font-family: "Reenie Beanie";
+}
+
+.text:before {
+  left: -2px;
+  text-shadow: 2px 0 #0ff;
+  animation: c2 1s infinite linear alternate-reverse;
+}
+
+.text:after {
+  left: 3px;
+  text-shadow: -2px 0 #f0f;
+  animation: c1 2s infinite linear alternate-reverse;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,599 @@
+@keyframes is-off {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  56% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 1;
+  }
+  71% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  72% {
+    transform: scaleY(3) skewX(-60deg);
+  }
+  73% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  91% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+    color: var(--txt-color);
+  }
+  92% {
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
+    color: green;
+  }
+  93% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+    color: var(--txt-color);
+  }
+}
+@keyframes c1 {
+  0% {
+    clip: rect(46 px, 9999px, 85 px, 0);
+  }
+  5% {
+    clip: rect(14 px, 9999px, 25 px, 0);
+  }
+  10% {
+    clip: rect(40 px, 9999px, 71 px, 0);
+  }
+  15% {
+    clip: rect(33 px, 9999px, 70 px, 0);
+  }
+  20% {
+    clip: rect(98 px, 9999px, 96 px, 0);
+  }
+  25% {
+    clip: rect(64 px, 9999px, 17 px, 0);
+  }
+  30% {
+    clip: rect(58 px, 9999px, 31 px, 0);
+  }
+  35% {
+    clip: rect(46 px, 9999px, 73 px, 0);
+  }
+  40% {
+    clip: rect(18 px, 9999px, 34 px, 0);
+  }
+  45% {
+    clip: rect(15 px, 9999px, 3 px, 0);
+  }
+  50% {
+    clip: rect(12 px, 9999px, 79 px, 0);
+  }
+  55% {
+    clip: rect(70 px, 9999px, 81 px, 0);
+  }
+  60% {
+    clip: rect(17 px, 9999px, 7 px, 0);
+  }
+  65% {
+    clip: rect(29 px, 9999px, 62 px, 0);
+  }
+  70% {
+    clip: rect(19 px, 9999px, 4 px, 0);
+  }
+  75% {
+    clip: rect(97 px, 9999px, 92 px, 0);
+  }
+  80% {
+    clip: rect(81 px, 9999px, 2 px, 0);
+  }
+  85% {
+    clip: rect(83 px, 9999px, 66 px, 0);
+  }
+  90% {
+    clip: rect(20 px, 9999px, 81 px, 0);
+  }
+  95% {
+    clip: rect(17 px, 9999px, 82 px, 0);
+  }
+  100% {
+    clip: rect(53 px, 9999px, 79 px, 0);
+  }
+}
+@keyframes c1 {
+  0% {
+    clip: rect(87 px, 9999px, 58 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  5% {
+    clip: rect(33 px, 9999px, 12 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  10% {
+    clip: rect(4 px, 9999px, 74 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  15% {
+    clip: rect(11 px, 9999px, 29 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  20% {
+    clip: rect(4 px, 9999px, 25 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  25% {
+    clip: rect(21 px, 9999px, 88 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  30% {
+    clip: rect(36 px, 9999px, 12 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  35% {
+    clip: rect(46 px, 9999px, 9 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  40% {
+    clip: rect(51 px, 9999px, 9 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  45% {
+    clip: rect(40 px, 9999px, 95 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  50% {
+    clip: rect(91 px, 9999px, 90 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  55% {
+    clip: rect(64 px, 9999px, 15 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  60% {
+    clip: rect(78 px, 9999px, 28 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  65% {
+    clip: rect(46 px, 9999px, 46 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  70% {
+    clip: rect(77 px, 9999px, 82 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  75% {
+    clip: rect(92 px, 9999px, 62 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  80% {
+    clip: rect(40 px, 9999px, 57 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  85% {
+    clip: rect(57 px, 9999px, 85 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  90% {
+    clip: rect(44 px, 9999px, 71 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  95% {
+    clip: rect(98 px, 9999px, 50 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+  100% {
+    clip: rect(93 px, 9999px, 24 px, 0);
+  }
+  23% {
+    transform: scaleX(0.8);
+  }
+}
+@keyframes clock-bag {
+  0% {
+    transform: translate(2 px, 2 px);
+  }
+  2% {
+    transform: translate(1 px, 3 px);
+  }
+  4% {
+    transform: translate(2 px, 3 px);
+  }
+  6% {
+    transform: translate(1 px, 2 px);
+  }
+  8% {
+    transform: translate(3 px, 1 px);
+  }
+  10% {
+    transform: translate(2 px, 3 px);
+  }
+  12% {
+    transform: translate(2 px, 2 px);
+  }
+  14% {
+    transform: translate(1 px, 1 px);
+  }
+  16% {
+    transform: translate(1 px, 2 px);
+  }
+  18% {
+    transform: translate(2 px, 3 px);
+  }
+  20% {
+    transform: translate(3 px, 3 px);
+  }
+  22% {
+    transform: translate(2 px, 1 px);
+  }
+  24% {
+    transform: translate(3 px, 2 px);
+  }
+  26% {
+    transform: translate(3 px, 3 px);
+  }
+  28% {
+    transform: translate(1 px, 3 px);
+  }
+  30% {
+    transform: translate(1 px, 2 px);
+  }
+  32% {
+    transform: translate(3 px, 3 px);
+  }
+  34% {
+    transform: translate(1 px, 1 px);
+  }
+  36% {
+    transform: translate(2 px, 1 px);
+  }
+  38% {
+    transform: translate(1 px, 2 px);
+  }
+  40% {
+    transform: translate(2 px, 3 px);
+  }
+  42% {
+    transform: translate(1 px, 2 px);
+  }
+  44% {
+    transform: translate(2 px, 2 px);
+  }
+  46% {
+    transform: translate(2 px, 3 px);
+  }
+  48% {
+    transform: translate(2 px, 3 px);
+  }
+  50% {
+    transform: translate(1 px, 1 px);
+  }
+  52% {
+    transform: translate(1 px, 1 px);
+  }
+  54% {
+    transform: translate(3 px, 1 px);
+  }
+  56% {
+    transform: translate(3 px, 3 px);
+  }
+  58% {
+    transform: translate(3 px, 3 px);
+  }
+  60% {
+    transform: translate(3 px, 1 px);
+  }
+  62% {
+    transform: translate(2 px, 3 px);
+  }
+  64% {
+    transform: translate(3 px, 1 px);
+  }
+  66% {
+    transform: translate(3 px, 3 px);
+  }
+  68% {
+    transform: translate(3 px, 3 px);
+  }
+  70% {
+    transform: translate(1 px, 3 px);
+  }
+  72% {
+    transform: translate(1 px, 2 px);
+  }
+  74% {
+    transform: translate(2 px, 2 px);
+  }
+  76% {
+    transform: translate(2 px, 2 px);
+  }
+  78% {
+    transform: translate(3 px, 2 px);
+  }
+  80% {
+    transform: translate(1 px, 3 px);
+  }
+  82% {
+    transform: translate(3 px, 2 px);
+  }
+  84% {
+    transform: translate(3 px, 1 px);
+  }
+  86% {
+    transform: translate(2 px, 3 px);
+  }
+  88% {
+    transform: translate(1 px, 2 px);
+  }
+  90% {
+    transform: translate(2 px, 3 px);
+  }
+  92% {
+    transform: translate(3 px, 1 px);
+  }
+  94% {
+    transform: translate(1 px, 3 px);
+  }
+  96% {
+    transform: translate(3 px, 2 px);
+  }
+  98% {
+    transform: translate(1 px, 3 px);
+  }
+  100% {
+    transform: translate(1 px, 2 px);
+  }
+  1% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  1.5% {
+    transform: scaleY(3) skewX(-60deg);
+  }
+  2% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  51% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+  52% {
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
+  }
+  53% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+}
+@keyframes tr-bag {
+  0% {
+    transform: translate(4 px, 1 px);
+  }
+  2% {
+    transform: translate(4 px, 1 px);
+  }
+  4% {
+    transform: translate(1 px, 3 px);
+  }
+  6% {
+    transform: translate(1 px, 4 px);
+  }
+  8% {
+    transform: translate(5 px, 3 px);
+  }
+  10% {
+    transform: translate(3 px, 5 px);
+  }
+  12% {
+    transform: translate(2 px, 5 px);
+  }
+  14% {
+    transform: translate(1 px, 2 px);
+  }
+  16% {
+    transform: translate(1 px, 4 px);
+  }
+  18% {
+    transform: translate(4 px, 5 px);
+  }
+  20% {
+    transform: translate(1 px, 3 px);
+  }
+  22% {
+    transform: translate(4 px, 4 px);
+  }
+  24% {
+    transform: translate(4 px, 3 px);
+  }
+  26% {
+    transform: translate(4 px, 3 px);
+  }
+  28% {
+    transform: translate(2 px, 5 px);
+  }
+  30% {
+    transform: translate(1 px, 4 px);
+  }
+  32% {
+    transform: translate(2 px, 1 px);
+  }
+  34% {
+    transform: translate(4 px, 1 px);
+  }
+  36% {
+    transform: translate(5 px, 2 px);
+  }
+  38% {
+    transform: translate(5 px, 5 px);
+  }
+  40% {
+    transform: translate(3 px, 3 px);
+  }
+  42% {
+    transform: translate(3 px, 5 px);
+  }
+  44% {
+    transform: translate(2 px, 5 px);
+  }
+  46% {
+    transform: translate(3 px, 4 px);
+  }
+  48% {
+    transform: translate(1 px, 5 px);
+  }
+  50% {
+    transform: translate(1 px, 4 px);
+  }
+  52% {
+    transform: translate(5 px, 3 px);
+  }
+  54% {
+    transform: translate(4 px, 5 px);
+  }
+  56% {
+    transform: translate(3 px, 5 px);
+  }
+  58% {
+    transform: translate(3 px, 5 px);
+  }
+  60% {
+    transform: translate(1 px, 3 px);
+  }
+  62% {
+    transform: translate(2 px, 2 px);
+  }
+  64% {
+    transform: translate(1 px, 2 px);
+  }
+  66% {
+    transform: translate(1 px, 2 px);
+  }
+  68% {
+    transform: translate(2 px, 1 px);
+  }
+  70% {
+    transform: translate(3 px, 5 px);
+  }
+  72% {
+    transform: translate(5 px, 5 px);
+  }
+  74% {
+    transform: translate(4 px, 1 px);
+  }
+  76% {
+    transform: translate(3 px, 5 px);
+  }
+  78% {
+    transform: translate(2 px, 5 px);
+  }
+  80% {
+    transform: translate(4 px, 5 px);
+  }
+  82% {
+    transform: translate(1 px, 1 px);
+  }
+  84% {
+    transform: translate(2 px, 1 px);
+  }
+  86% {
+    transform: translate(4 px, 2 px);
+  }
+  88% {
+    transform: translate(5 px, 1 px);
+  }
+  90% {
+    transform: translate(5 px, 5 px);
+  }
+  92% {
+    transform: translate(4 px, 2 px);
+  }
+  94% {
+    transform: translate(4 px, 5 px);
+  }
+  96% {
+    transform: translate(3 px, 5 px);
+  }
+  98% {
+    transform: translate(2 px, 2 px);
+  }
+  100% {
+    transform: translate(5 px, 2 px);
+  }
+  1% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  1.5% {
+    transform: scaleY(3) skewX(-60deg);
+  }
+  2% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  51% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+  52% {
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
+  }
+  53% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+}
+@keyframes bg-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -32px;
+  }
+}
+
+/*# sourceMappingURL=animation.css.map */
