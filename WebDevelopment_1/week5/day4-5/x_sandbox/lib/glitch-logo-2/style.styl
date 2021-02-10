@@ -46,6 +46,8 @@ $lay-c2    = 2
   left:   0
   margin: auto
   cursor: default
+  transform: skewX(0deg) scaleY(1)
+  animation: clock-bag 4s linear infinite
 
 .is-off
   animation: is-off 2s linear infinite !important
@@ -75,9 +77,3 @@ $lay-c2    = 2
     left: ($offset-c1)px
     text-shadow: -($lay-c1)px 0 $color-c1
     animation: c1 2s infinite linear alternate-reverse
-
-.text-wrapper
-  transform: skewX(0deg) scaleY(1)
-  animation: clock-bag 4s linear infinite
-  
-
