@@ -7,10 +7,12 @@
     font-weight: 700;
     font-family: "Limelight";
     font-size: 2.5rem;
-    color: var(--magenta);
-    opacity: 0.4;
+    color: var(--cyan-transparent-05);
   }
   &__icons {
     font-size: 1.5rem;
+    & > a {
+      color: var(--cyan);
+    }
   }
 }

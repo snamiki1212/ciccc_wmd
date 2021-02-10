@@ -2,9 +2,9 @@
   display: inline-block;
   padding: 1.5rem 3rem;
   border: 1px solid var(--yellow-transparent-05);
+  background: var(--yellow-transparent-01);
   &__item {
-    color: var(--yellow);
+    color: var(--yellow-transparent-08);
     font-size: 0.9rem;
-    opacity: 0.4;
   }
 }
