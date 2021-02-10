@@ -1,5 +1,9 @@
 .section-experiences {
   padding: 1rem;
+  &__content {
+    padding: 1rem;
+    border: 1px solid var(--cyan-transparent-05);
+  }
 }
 
 .experience-list {
