@@ -20,13 +20,7 @@
   flex-direction: column;
   gap: 0.5rem;
   &__title {
-    display: flex;
-    justify-content: space-around;
-    font-size: 2rem;
-    & > span {
-      color: var(--cyan);
-      opacity: 0.4;
-    }
+    //
   }
   &__text {
     //
