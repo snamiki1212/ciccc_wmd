@@ -1,24 +1,29 @@
 .section-aboutme {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto 1fr;
-  grid-template-areas:
-    "title       title "
-    "description avator";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__title {
-    grid-area: title;
+    //
   }
 
   &__avator {
-    grid-area: avator;
+    //
   }
 
   &__description {
-    grid-area: description;
+    width: 50%;
     & > p {
       margin-bottom: 1rem;
     }
+  }
+
+  &__tags {
+    //
+  }
+
+  &__aboutme {
+    //
   }
 }
 
