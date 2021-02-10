@@ -1,3 +1,9 @@
 .section-contact {
   height: 50vh;
+
+  &__body {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+  }
 }

@@ -20,21 +20,23 @@
   flex-direction: column;
   gap: 0.5rem;
   &__title {
-    color: var(--cyan);
     display: flex;
     justify-content: space-around;
     font-size: 2rem;
+    & > span {
+      color: var(--cyan);
+      opacity: 0.4;
+    }
   }
   &__text {
-    color: var(--yellow);
-    opacity: 0.6;
+    //
   }
   &__tags {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    color: var(--magenta);
-    opacity: 0.6;
+    color: var(--yellow);
+    opacity: 0.4;
   }
 }
 
