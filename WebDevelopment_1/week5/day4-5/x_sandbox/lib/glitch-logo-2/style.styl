@@ -26,7 +26,7 @@ $lay-c2    = 2
   overflow: hidden
 
 .text-wrapper
-  display: block
+  display: inline-block
   position: absolute
   z-index: 9
   width:  720px
@@ -37,14 +37,14 @@ $lay-c2    = 2
   bottom: 0
   left:   0
   margin: auto
-  cursor: default
-  span
-    display: block
-    position: relative
-    font-size: 128px
-    line-height: 1
   &.is-off
     animation: is-off 2s linear infinite !important
+
+.text
+  display: block
+  position: relative
+  font-size: 128px
+  line-height: 1
 
 .glitch-wrapper
   &:before
