@@ -14,6 +14,10 @@ $offset-c2 = 2
 $lay-c1    = 2
 $lay-c2    = 2
 
+:root {
+  --font-size: 126px;
+}
+
 .glitch-wrapper
   background: $bg-color
   color: $txt-color
@@ -41,7 +45,7 @@ $lay-c2    = 2
   position: absolute
   z-index: 9
   width:  720px
-  height: 128px
+  height: var(--font-size)
   text-align: center
   top:    0
   right:  0
@@ -50,13 +54,14 @@ $lay-c2    = 2
   margin: auto
   transform: skewX(0deg) scaleY(1)
   animation: clock-bag 4s linear infinite
-  &.is-off
-    animation: is-off 2s linear infinite !important
+
+.is-off
+  animation: is-off 2s linear infinite !important
 
 .text
   display: block
   position: relative
-  font-size: 128px
+  font-size: var(--font-size)
   line-height: 1
   &:before,
   &:after
@@ -68,7 +73,7 @@ $lay-c2    = 2
     background: $bg-color
     overflow: hidden
     width:  720px
-    height: 128px
+    height: var(--font-size)
     clip: rect(0,900px,0,0)
   &:before
     left: -($offset-c2)px
