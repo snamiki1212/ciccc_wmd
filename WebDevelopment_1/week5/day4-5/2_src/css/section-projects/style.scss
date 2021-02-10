@@ -1,6 +1,3 @@
-.section-projects-header {
-}
-
 .section-projects {
   display: flex;
   flex-direction: column;
@@ -8,12 +5,33 @@
 }
 
 .project {
+  padding: 2rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
   border: 1px solid black;
   &__block {
     width: 30%;
+  }
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  &__title {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+  }
+  &__text {
+    color: var(--yellow);
+    opacity: 0.6;
+  }
+  &__tags {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
 }
 
