@@ -37,8 +37,7 @@ $lay-c2    = 2
   display: block
   position: absolute
   z-index: 9
-  width:  720px
-  height: 128px
+  width: 100%
   text-align: center
   top:    0
   right:  0
@@ -66,9 +65,8 @@ $lay-c2    = 2
     color: $txt-color
     background: $bg-color
     overflow: hidden
-    width:  720px
-    height: 128px
-    clip: rect(0,900px,0,0)
+    width: 100%
+    clip: rect(0,100%,0,0)
   &:before
     left: -($offset-c2)px
     text-shadow: ($lay-c2)px 0 $color-c2
