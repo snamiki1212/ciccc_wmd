@@ -47,6 +47,3 @@ window.addEventListener("DOMContentLoaded", () => {
   
 });
 
-const GITHUB_URL = 'https://github.com/snamiki1212' // TODO:
-
-console.log(`🦊🐶🐱🦊🐶🐱🦊🐶🐱\n🦊🐶🐱🦊🐶🐱🦊🐶🐱\n🦊🐶🐱🦊🐶🐱🦊🐶🐱\n\nHi :)\n You want to deep into this site?\n  Go GitHub =>\n   ${GITHUB_URL} \n\n🦊🐶🐱🦊🐶🐱🦊🐶🐱\n🦊🐶🐱🦊🐶🐱🦊🐶🐱\n🦊🐶🐱🦊🐶🐱🦊🐶🐱`);
