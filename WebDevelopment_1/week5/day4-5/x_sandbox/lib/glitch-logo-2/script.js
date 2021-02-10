@@ -1,5 +1,5 @@
 const MESSAGE = `Nash`;
-const CLOCK_CLASS = 'clock'
+const CLOCK_CLASS = 'text-wrapper'
 const REMOVED_CLASS = 'is-off'
 const TIME_CLASS = "time";
 
