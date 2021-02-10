@@ -1,2 +1,11 @@
 .section-experiences {
 }
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__item {
+  }
+}
