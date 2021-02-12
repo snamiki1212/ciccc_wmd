@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @import "animation.css";
+/** removable params */
 *,
 *:before,
 *:after {
@@ -22,6 +23,7 @@
   animation: clock-bag 4s linear infinite;
   display: inline-block;
   text-align: center;
+  /** removable params */
   background: #111;
   color: #fff;
   font-family: "Lato", sans-serif;
@@ -38,10 +40,11 @@
   content: attr(data-time);
   position: absolute;
   top: 0;
-  color: #fff;
-  background: #111;
   width: 100%;
   height: 100%;
+  /** removable params */
+  color: #fff;
+  background: #111;
 }
 .text-wrapper > .text:before {
   left: -2px;
