@@ -1,13 +1,13 @@
 // fork from: https://codepen.io/fearOfCode/pen/FsGtu
 
 const CLASS_is_off = "is-off"
-const CLASS_clock = ".clock"
-const CLASS_text = ".time"
+const CLASS_text_wrapper = ".text-wrapper"
+const CLASS_text = ".text"
 const ATTRIBUTE_data = "data-time"
 
 window.addEventListener("DOMContentLoaded", function () {
   function second_passed() {
-    document.querySelector(CLASS_clock).classList.remove(CLASS_is_off);
+    document.querySelector(CLASS_text_wrapper).classList.remove(CLASS_is_off);
   }
 
   // setTimeout(second_passed, 2000);

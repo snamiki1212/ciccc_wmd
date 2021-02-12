@@ -31,35 +31,6 @@ $lay-c2: 2;
   color: $txt-color;
 }
 
-// a.switcher
-// display: block
-// position: fixed
-// text-decoration: none
-// z-index: 999999999999
-// right: 20px
-// bottom: 20px
-// width: 16px
-// height: 16px
-// background: transparent
-// border: 2px solid $txt-color
-// border-radius: 50%
-// opacity: 0.15
-// transition: opacity 0.15s
-
-// &:hover
-// opacity: 1
-
-// &:before
-// display: block
-// content: ''
-// position: absolute
-// border-radius: 4px
-// width: 2px
-// height: 5px
-// background: $txt-color
-// top: 0
-// left: 5px
-
 .screen {
   position: relative;
   z-index: 1;
@@ -68,57 +39,7 @@ $lay-c2: 2;
   overflow: hidden;
 }
 
-.figure {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  width: 0;
-  height: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  border-top: 200px solid $txt-color;
-  border-right: 100px solid transparent;
-  border-left: 100px solid transparent;
-  border-bottom: 0 solid transparent;
-
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    z-index: 99;
-    width: 0;
-    height: 0;
-    top: -194px;
-    left: -90px;
-    margin: auto;
-    border-top: 180px solid $bg-color;
-    border-right: 90px solid transparent;
-    border-left: 90px solid transparent;
-    border-bottom: 0 solid transparent;
-  }
-}
-
-.figure-mask {
-  display: block;
-  position: absolute;
-  z-index: 99;
-  width: 0;
-  height: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  border-top: 200px solid transparent;
-  border-right: 100px solid $bg-color;
-  border-left: 100px solid $bg-color;
-  border-bottom: 0 solid transparent;
-}
-
-.clock {
+.text-wrapper {
   display: block;
   position: absolute;
   z-index: 9;
@@ -167,13 +88,7 @@ $lay-c2: 2;
     );
   }
 
-  .figure,
-  .figure-mask {
-    transform: skewX(0deg) scaleY(1);
-    animation: tr-bag 4s linear infinite;
-  }
-
-  .clock {
+  .text-wrapper {
     transform: skewX(0deg) scaleY(1);
     animation: clock-bag 4s linear infinite;
     & > span {
@@ -205,3 +120,62 @@ $lay-c2: 2;
     }
   }
 }
+
+// -----------------------------------------------------------
+// .figure {
+//   display: block;
+//   position: absolute;
+//   z-index: 1;
+//   width: 0;
+//   height: 0;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   margin: auto;
+//   border-top: 200px solid $txt-color;
+//   border-right: 100px solid transparent;
+//   border-left: 100px solid transparent;
+//   border-bottom: 0 solid transparent;
+
+//   &:before {
+//     display: block;
+//     content: "";
+//     position: absolute;
+//     z-index: 99;
+//     width: 0;
+//     height: 0;
+//     top: -194px;
+//     left: -90px;
+//     margin: auto;
+//     border-top: 180px solid $bg-color;
+//     border-right: 90px solid transparent;
+//     border-left: 90px solid transparent;
+//     border-bottom: 0 solid transparent;
+//   }
+// }
+
+// .figure-mask {
+//   display: block;
+//   position: absolute;
+//   z-index: 99;
+//   width: 0;
+//   height: 0;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   margin: auto;
+//   border-top: 200px solid transparent;
+//   border-right: 100px solid $bg-color;
+//   border-left: 100px solid $bg-color;
+//   border-bottom: 0 solid transparent;
+// }
+
+// .glitch{
+//   .figure,
+//   .figure-mask {
+//     transform: skewX(0deg) scaleY(1);
+//     animation: tr-bag 4s linear infinite;
+//   }
+// }
