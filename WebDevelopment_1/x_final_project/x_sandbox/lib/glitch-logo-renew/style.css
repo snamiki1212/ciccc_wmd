@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-@import 'animation.css';
+@import "animation.css";
 *,
 *:before,
 *:after {
@@ -10,21 +10,24 @@
   box-sizing: border-box;
   user-select: none;
 }
+
 .container {
   width: 100vw;
   height: 100vh;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   background: #111;
   color: #fff;
 }
+
 .screen {
   position: relative;
   z-index: 1;
-  widht: 100%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
+
 .figure {
   display: block;
   position: absolute;
@@ -43,7 +46,7 @@
 }
 .figure:before {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   z-index: 99;
   width: 0;
@@ -56,6 +59,7 @@
   border-left: 90px solid transparent;
   border-bottom: 0 solid transparent;
 }
+
 .figure-mask {
   display: block;
   position: absolute;
@@ -72,6 +76,7 @@
   border-left: 100px solid #111;
   border-bottom: 0 solid transparent;
 }
+
 .clock {
   display: block;
   position: absolute;
@@ -95,17 +100,18 @@
 .clock.is-off {
   animation: is-off 2s linear infinite !important;
 }
+
 .glitch:before {
   position: absolute;
   z-index: 999999;
-  content: '';
+  content: "";
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   animation: bg-move 2s linear infinite;
   background-size: 100% 8px;
-  background-image: linear-gradient(0, rgba(255,255,255,0.05) 10%, transparent 10%, transparent 50%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.05) 60%, transparent 60%, transparent);
+  background-image: linear-gradient(0, rgba(255, 255, 255, 0.05) 10%, transparent 10%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 60%, transparent 60%, transparent);
 }
 .glitch .figure,
 .glitch .figure-mask {
@@ -116,8 +122,7 @@
   transform: skewX(0deg) scaleY(1);
   animation: clock-bag 4s linear infinite;
 }
-.glitch .clock span:before,
-.glitch .clock span:after {
+.glitch .clock > span:before, .glitch .clock > span:after {
   display: block;
   content: attr(data-time);
   position: absolute;
@@ -129,13 +134,15 @@
   height: 128px;
   clip: rect(0, 900px, 0, 0);
 }
-.glitch .clock span:before {
+.glitch .clock > span:before {
   left: -2px;
-  text-shadow: 2 px 0 #00f;
+  text-shadow: 2px 0 blue;
   animation: c2 1s infinite linear alternate-reverse;
 }
-.glitch .clock span:after {
+.glitch .clock > span:after {
   left: 3px;
-  text-shadow: -2px 0 #f00;
+  text-shadow: -2px 0 red;
   animation: c1 2s infinite linear alternate-reverse;
 }
+
+/*# sourceMappingURL=style.css.map */
