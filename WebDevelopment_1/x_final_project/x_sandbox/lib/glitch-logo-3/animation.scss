@@ -13,7 +13,6 @@ $lay-c2: 2;
 
 // animation
 @function _random($val) {
-  // @return math(math(0, 'random') * val + 1, 'floor')
   @return random() * $val + 1;
 }
 

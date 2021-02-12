@@ -1,4 +1,4 @@
-const MESSAGE = `paragraph`;
+const MESSAGE = `Paragraph`;
 const REMOVED_CLASS = 'is-off'
 const TEXT_WRAPPER_CLASS = 'text-wrapper'
 const TEXT_CLASS = "text";
