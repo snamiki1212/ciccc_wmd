@@ -30,6 +30,7 @@ $lay-c2: 2;
   background: $bg-color;
   color: $txt-color;
 }
+// --------------------------------------------------------------
 
 .screen {
   position: relative;
@@ -40,6 +41,11 @@ $lay-c2: 2;
 }
 
 .text-wrapper {
+  // Glitch
+  transform: skewX(0deg) scaleY(1);
+  animation: clock-bag 4s linear infinite;
+
+  // Core
   display: block;
   position: absolute;
   z-index: 9;
@@ -53,72 +59,45 @@ $lay-c2: 2;
   margin: auto;
   cursor: default;
 
-  span {
+  & > .text {
     display: block;
     position: relative;
     font-size: 128px;
     line-height: 1;
-  }
 
-  &.is-off {
-    animation: is-off 2s linear infinite !important;
+    &:before,
+    &:after {
+      // Glitch
+      display: block;
+      content: attr(data-time);
+      position: absolute;
+      top: 0;
+      color: $txt-color;
+      background: $bg-color;
+      overflow: hidden;
+      width: 720px;
+      height: 128px;
+      clip: rect(0, 100%, 0, 0);
+    }
+
+    &:before {
+      // Glitch
+      left: -($offset-c2 * 1px);
+      text-shadow: $lay-c2 * 1px 0 $color-c2;
+      animation: c2 1s infinite linear alternate-reverse;
+    }
+
+    &:after {
+      // Glitch
+      left: $offset-c1 * 1px;
+      text-shadow: -($lay-c1 * 1px) 0 $color-c1;
+      animation: c1 2s infinite linear alternate-reverse;
+    }
   }
 }
 
-.glitch {
-  &:before {
-    position: absolute;
-    z-index: 999999;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    animation: bg-move 2s linear infinite;
-    background-size: 100% 8px;
-    background-image: linear-gradient(
-      0,
-      rgba(255, 255, 255, 0.05) 10%,
-      transparent 10%,
-      transparent 50%,
-      rgba(255, 255, 255, 0.05) 50%,
-      rgba(255, 255, 255, 0.05) 60%,
-      transparent 60%,
-      transparent
-    );
-  }
-
-  .text-wrapper {
-    transform: skewX(0deg) scaleY(1);
-    animation: clock-bag 4s linear infinite;
-    & > span {
-      &:before,
-      &:after {
-        display: block;
-        content: attr(data-time);
-        position: absolute;
-        top: 0;
-        color: $txt-color;
-        background: $bg-color;
-        overflow: hidden;
-        width: 720px;
-        height: 128px;
-        clip: rect(0, 900px, 0, 0);
-      }
-
-      &:before {
-        left: -($offset-c2 * 1px);
-        text-shadow: $lay-c2 * 1px 0 $color-c2;
-        animation: c2 1s infinite linear alternate-reverse;
-      }
-
-      &:after {
-        left: $offset-c1 * 1px;
-        text-shadow: -($lay-c1 * 1px) 0 $color-c1;
-        animation: c1 2s infinite linear alternate-reverse;
-      }
-    }
-  }
+.is-off {
+  animation: is-off 2s linear infinite !important;
 }
 
 // -----------------------------------------------------------
