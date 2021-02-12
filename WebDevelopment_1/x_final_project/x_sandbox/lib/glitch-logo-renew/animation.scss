@@ -1,0 +1,166 @@
+$bg-color: #111;
+$txt-color: #fff;
+$color-c1: red;
+$color-c2: blue;
+$offset-c1: 3;
+$offset-c2: 2;
+$lay-c1: 2;
+$lay-c2: 2;
+// ----------------------------------------
+
+// animation
+@function _random($val) {
+  @return random() * $val + 1;
+}
+
+@keyframes is-off {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  56% {
+    opacity: 0;
+  }
+
+  57% {
+    opacity: 0;
+  }
+
+  58% {
+    opacity: 1;
+  }
+
+  71% {
+    transform: scaleY(1) skewX(0deg);
+  }
+
+  72% {
+    transform: scaleY(3) skewX(-60deg);
+  }
+
+  73% {
+    transform: scaleY(1) skewX(0deg);
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  81% {
+    opacity: 0;
+  }
+
+  84% {
+    opacity: 0;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  91% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+    color: $txt-color;
+  }
+
+  92% {
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
+    color: green;
+  }
+
+  93% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+    color: $txt-color;
+  }
+}
+
+@keyframes c1 {
+  @for $i from 0 through 20 {
+    #{$i * (1 / 20) * 10 * 10%} {
+      clip: rect(_random(100) * 1px, 9999px, _random(100) * 1px, 0);
+    }
+  }
+}
+
+@keyframes c2 {
+  @for $i from 0 through 20 {
+    #{$i * (1 / 20) * 10 * 10%} {
+      clip: rect(_random(100) * 1px, 9999px, _random(100) * 1px, 0);
+    }
+    23% {
+      transform: scaleX(0.8);
+    }
+  }
+}
+
+@keyframes clock-bag {
+  @for $i from 0 through 50 {
+    #{$i * (1 / 50) * 10 * 10%} {
+      transform: translate(_random(5) * 1px, _random(5) * 1px);
+    }
+  }
+  1% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  1.5% {
+    transform: scaleY(3) skewX(-60deg);
+  }
+  2% {
+    transform: scaleY(1) skewX(0deg);
+  }
+  51% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+  52% {
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
+  }
+  53% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+}
+
+@keyframes tr-bag {
+  @for $i from 0 through 50 {
+    #{$i * (1 / 50) * 10 * 10%} {
+      transform: translate(_random(5) * 1px, _random(5) * 1px);
+    }
+  }
+
+  1% {
+    transform: scaleY(1) skewX(0deg);
+  }
+
+  1.5% {
+    transform: scaleY(3) skewX(-60deg);
+  }
+
+  2% {
+    transform: scaleY(1) skewX(0deg);
+  }
+
+  51% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+
+  52% {
+    transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
+  }
+
+  53% {
+    transform: scaleX(1) scaleY(1) skewX(0deg);
+  }
+}
+
+@keyframes bg-move {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 -32px;
+  }
+}
