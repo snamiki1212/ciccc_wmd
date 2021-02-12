@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie");
+@import "animation";
+// @import 'figure.styl'
+
+$bg-color: #111;
+$txt-color: #fff;
+
+$color-c1: magenta;
+$color-c2: cyan;
+
+$offset-c1: 3;
+$offset-c2: 2;
+
+$lay-c1: 2;
+$lay-c2: 2;
+
+.glitch-wrapper {
+  background: $bg-color;
+  color: $txt-color;
+  display: inline-block;
+  font-family: "Reenie Beanie";
+  &:before {
+    position: absolute;
+    z-index: 999999;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.screen {
+  position: relative;
+  z-index: 1;
+}
+
+.text-wrapper {
+  z-index: 9;
+  text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: default;
+  transform: skewX(0deg) scaleY(1);
+  animation: clock-bag 4s linear infinite;
+  font-family: "Reenie Beanie";
+}
+
+.is-off {
+  animation: is-off 2s linear infinite !important;
+}
+
+.text {
+  font-family: "Reenie Beanie";
+  display: inline-block;
+  font-size: 7rem;
+  &:before,
+  &:after {
+    display: block;
+    content: attr(data-time);
+    position: absolute;
+    top: 0;
+    color: $txt-color;
+    background: $bg-color;
+    width: 100%;
+    clip: rect(0, 100%, 0, 0);
+    font-family: "Reenie Beanie";
+  }
+  &:before {
+    left: -($offset-c2) px;
+    text-shadow: ($lay-c2) px 0 $color-c2;
+    animation: c2 1s infinite linear alternate-reverse;
+  }
+  &:after {
+    left: ($offset-c1) px;
+    text-shadow: -($lay-c1) px 0 $color-c1;
+    animation: c1 2s infinite linear alternate-reverse;
+  }
+}
