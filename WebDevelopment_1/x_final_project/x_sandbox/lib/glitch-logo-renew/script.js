@@ -1,8 +1,13 @@
 // fork from: https://codepen.io/fearOfCode/pen/FsGtu
 
+const CLASS_is_off = "is-off"
+const CLASS_clock = ".clock"
+const CLASS_text = ".time"
+const ATTRIBUTE_data = "data-time"
+
 window.addEventListener("DOMContentLoaded", function () {
   function second_passed() {
-    document.querySelector(".clock").classList.remove("is-off");
+    document.querySelector(CLASS_clock).classList.remove(CLASS_is_off);
   }
 
   // setTimeout(second_passed, 2000);
@@ -27,9 +32,9 @@ window.addEventListener("DOMContentLoaded", function () {
       seconds;
 
     // $(".time").html(realTime);
-    elem = document.querySelector(".time");
+    elem = document.querySelector(CLASS_text);
     elem.innerHTML = realTime;
-    elem.setAttribute("data-time", realTime);
+    elem.setAttribute(ATTRIBUTE_data, realTime);
     // $(".time")
   }, 1000);
 });
