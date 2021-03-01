@@ -1,0 +1,3 @@
+```zsh
+yarn jest
+```
