@@ -1,0 +1,25 @@
+<div id="app">
+
+</div>
+
+<script>
+  // DOMs
+  const appDOM = document.querySelector('#app');
+
+  // fetch
+  const GITHUB_URL = "https://api.github.com/repos/snamiki1212/plangoab/issues";
+  fetch(GITHUB_URL)
+    .then(res => {
+      console.log('res', res);
+      return res.json()
+    })
+    .then(list => {
+      list.forEach(item => {
+        const divDOM = document.createElement('div')
+        divDOM.innerHTML = item.title;
+        appDOM.appendChild(divDOM);
+      })
+    })
+    .catch(err => console.error(err))
+
+</script>
