@@ -1,0 +1,74 @@
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const USERS_URL = "https://jsonplaceholder.typicode.com/users"
+    let allUsers = [];
+    let renderUsers = [];
+
+    const appDOM = document.querySelector('#app');
+    const usersDOM = document.querySelector('.users');
+    const inputDOM = document.querySelector('.input');
+
+    const reset = dom => { dom.innerHTML = "" }
+
+    const rerender = (list) => {
+      reset(usersDOM);
+      list.forEach(item => {
+        const userDOM = createUserDom(item);
+        usersDOM.appendChild(userDOM);
+      });
+    }
+
+    const createUserDom = item => {
+      const containerDOM = document.createElement('li');
+
+      // id
+      const idDOM = document.createElement('div');
+      idDOM.innerHTML = item.id
+      containerDOM.appendChild(idDOM)
+
+      // name
+      const nameDOM = document.createElement('div');
+      nameDOM.innerHTML = item.name
+      containerDOM.appendChild(nameDOM)
+
+      return containerDOM
+    }
+
+    const bootstrap = () => {
+      inputDOM.addEventListener('change', event => {
+        const value = parseInt(event.target.value.trim());
+        renderUsers = isNaN(value) ? allUsers : allUsers.filter(user => user.id === value);
+        rerender(renderUsers);
+      })
+
+      fetch(USERS_URL)
+        .then(res => res.json())
+        .then(list => {
+          allUsers = list;
+          renderUsers = allUsers;
+          rerender(renderUsers);
+        })
+        .catch(err => {
+          appDOM.innerHTML = ""
+
+          // append error message
+          const divDOM = document.createElement('div');
+          divDOM.innerHTML = 'Sorry, Something error happen :/'
+          appDOM.appendChild(divDOM);
+
+          console.warn(err)
+        })
+    }
+
+    bootstrap();
+  })
+
+</script>
+
+<div id="app">
+  <input type="number" class="input" />
+  <div class="users">
+    <!-- INSERT HERE -->
+  </div>
+
+</div>
