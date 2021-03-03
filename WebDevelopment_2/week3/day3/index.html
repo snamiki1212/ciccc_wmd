@@ -20,6 +20,7 @@
 
     const createUserDom = item => {
       const containerDOM = document.createElement('li');
+      containerDOM.style.border = "1px solid black"
 
       // id
       const idDOM = document.createElement('div');
@@ -30,6 +31,16 @@
       const nameDOM = document.createElement('div');
       nameDOM.innerHTML = item.name
       containerDOM.appendChild(nameDOM)
+
+      // userName
+      const userNameDOM = document.createElement('div');
+      userNameDOM.innerHTML = item.username
+      containerDOM.appendChild(userNameDOM)
+
+      // email
+      const emailDOM = document.createElement('div');
+      emailDOM.innerHTML = item.email
+      containerDOM.appendChild(emailDOM)
 
       return containerDOM
     }
