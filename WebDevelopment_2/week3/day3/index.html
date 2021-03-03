@@ -42,6 +42,11 @@
       emailDOM.innerHTML = item.email
       containerDOM.appendChild(emailDOM)
 
+      // address
+      const addressStreetDOM = document.createElement('div');
+      addressStreetDOM.innerHTML = item.address.street
+      containerDOM.appendChild(addressStreetDOM)
+
       return containerDOM
     }
 
