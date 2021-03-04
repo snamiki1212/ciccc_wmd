@@ -1,5 +1,21 @@
 <script>
-  const PHOTOS_URL = "https://jsonplaceholder.typicode.com/photos"
+  "use strict"
+
+  const createPhotosUrl = maybeId => {
+    const isId = !isNaN(parseInt(maybeId))
+    return `https://jsonplaceholder.typicode.com/photos/${isId ? maybeId : ""}`
+  }
+
+  const fetchPhotos = url => {
+    console.log(">> fetch start:", url);
+    return fetch(url)
+      .then(res => {
+        if (res.status !== 200) throw new Error("Unexpected response status")
+        return res;
+      })
+      .then(res => res.json())
+      .then(data => Array.isArray(data) ? data : [data])
+  }
 
   const reset = dom => { dom.innerHTML = "" }
 
@@ -23,12 +39,17 @@
 
     // id
     const idDOM = document.createElement('div');
-    idDOM.innerHTML = `id: ${item.id}`;
+    idDOM.innerHTML = item.id
     containerDOM.appendChild(idDOM)
+
+    // name
+    const nameDOM = document.createElement('div');
+    nameDOM.innerHTML = item.name
+    containerDOM.appendChild(nameDOM)
 
     // title
     const titleDOM = document.createElement('div');
-    titleDOM.innerHTML = `title: ${item.title}`
+    titleDOM.innerHTML = item.title
     containerDOM.appendChild(titleDOM)
 
     // thumbnailUrl
@@ -48,22 +69,27 @@
 
     const init = () => {
       inputDOM.addEventListener('change', event => {
-        const maybeId = parseInt(event.target.value.trim());
-        const filteredUsers = isNaN(maybeId) ? allPhotos : allPhotos.filter(user => user.id === maybeId);
-        rerender(photosDOM, filteredUsers);
+        const id = parseInt(event.target.value.trim());
+        const url = createPhotosUrl(id);
+
+        fetchPhotos(url)
+          .then(list => {
+            allPhotos = list;
+            rerender(photosDOM, allPhotos);
+          }).catch(err => {
+            const errDom = createErrorDom()
+            appDOM.innerHTML = ""
+            appDOM.appendChild(errDom);
+            console.warn(err)
+          })
       })
 
-      fetch(PHOTOS_URL)
-        .then(res => {
-          if (res.status !== 200) throw new Error("Unexpected response status", res.status);
-          return res;
-        })
-        .then(res => res.json())
+      const url = createPhotosUrl();
+      fetchPhotos(url)
         .then(list => {
           allPhotos = list;
           rerender(photosDOM, allPhotos);
-        })
-        .catch(err => {
+        }).catch(err => {
           const errDom = createErrorDom()
           appDOM.innerHTML = ""
           appDOM.appendChild(errDom);
