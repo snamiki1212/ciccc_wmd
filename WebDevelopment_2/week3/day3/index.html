@@ -9,11 +9,11 @@
 
     const reset = dom => { dom.innerHTML = "" }
 
-    const rerender = (list) => {
-      reset(usersDOM);
+    const rerender = (targetDOM, list) => {
+      reset(targetDOM);
       list.forEach(item => {
-        const userDOM = createUserDom(item);
-        usersDOM.appendChild(userDOM);
+        const newUserDOM = createUserDom(item);
+        targetDOM.appendChild(newUserDOM);
       });
     }
 
@@ -52,15 +52,15 @@
     const bootstrap = () => {
       inputDOM.addEventListener('change', event => {
         const value = parseInt(event.target.value.trim());
-        const renderUsers = isNaN(value) ? allUsers : allUsers.filter(user => user.id === value);
-        rerender(renderUsers);
+        const filteredUsers = isNaN(value) ? allUsers : allUsers.filter(user => user.id === value);
+        rerender(usersDOM, filteredUsers);
       })
 
       fetch(USERS_URL)
         .then(res => res.json())
         .then(list => {
           allUsers = list;
-          rerender(allUsers);
+          rerender(usersDOM, allUsers);
         })
         .catch(err => {
           appDOM.innerHTML = ""
