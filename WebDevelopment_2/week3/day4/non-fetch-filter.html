@@ -1,6 +1,7 @@
 <script>
+  const PHOTOS_URL = "https://jsonplaceholder.typicode.com/photos"
+
   window.addEventListener("DOMContentLoaded", () => {
-    const USERS_URL = "https://jsonplaceholder.typicode.com/photos"
     let allPhotos = [];
 
     const appDOM = document.querySelector('#app');
@@ -15,6 +16,12 @@
         const newUserDOM = createPhotoDom(item);
         targetDOM.appendChild(newUserDOM);
       });
+    }
+
+    const creaetErrorDom = () => {
+      const errDom = document.createElement('div');
+      errDom.innerHTML = 'Sorry, Something error happen :/'
+      return errDom
     }
 
     const createPhotoDom = item => {
@@ -51,20 +58,20 @@
         rerender(photosDOM, filteredUsers);
       })
 
-      fetch(USERS_URL)
+      fetch(PHOTOS_URL)
+        .then(res => {
+          if (res.status !== 200) throw new Error("Unexpected response status")
+          return res;
+        })
         .then(res => res.json())
         .then(list => {
           allPhotos = list;
           rerender(photosDOM, allPhotos);
         })
         .catch(err => {
+          const errDom = creaetErrorDom()
           appDOM.innerHTML = ""
-
-          // append error message
-          const divDOM = document.createElement('div');
-          divDOM.innerHTML = 'Sorry, Something error happen :/'
-          appDOM.appendChild(divDOM);
-
+          appDOM.appendChild(errDom);
           console.warn(err)
         })
     }
