@@ -1,0 +1,83 @@
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const USERS_URL = "https://jsonplaceholder.typicode.com/photos"
+    let allPhotos = [];
+
+    const appDOM = document.querySelector('#app');
+    const photosDOM = document.querySelector('.photos');
+    const inputDOM = document.querySelector('.input');
+
+    const reset = dom => { dom.innerHTML = "" }
+
+    const rerender = (targetDOM, list) => {
+      reset(targetDOM);
+      list.forEach(item => {
+        const newUserDOM = createPhotoDom(item);
+        targetDOM.appendChild(newUserDOM);
+      });
+    }
+
+    const createPhotoDom = item => {
+      const containerDOM = document.createElement('li');
+      containerDOM.style.border = "1px solid black"
+
+      // id
+      const idDOM = document.createElement('div');
+      idDOM.innerHTML = item.id
+      containerDOM.appendChild(idDOM)
+
+      // name
+      const nameDOM = document.createElement('div');
+      nameDOM.innerHTML = item.name
+      containerDOM.appendChild(nameDOM)
+
+      // title
+      const titleDOM = document.createElement('div');
+      titleDOM.innerHTML = item.title
+      containerDOM.appendChild(titleDOM)
+
+      // thumbnailUrl
+      const thumbnailDOM = document.createElement('img');
+      thumbnailDOM.src = item.thumbnailUrl
+      containerDOM.appendChild(thumbnailDOM)
+
+      return containerDOM
+    }
+
+    const bootstrap = () => {
+      inputDOM.addEventListener('change', event => {
+        const value = parseInt(event.target.value.trim());
+        const filteredUsers = isNaN(value) ? allPhotos : allPhotos.filter(user => user.id === value);
+        rerender(photosDOM, filteredUsers);
+      })
+
+      fetch(USERS_URL)
+        .then(res => res.json())
+        .then(list => {
+          allPhotos = list;
+          rerender(photosDOM, allPhotos);
+        })
+        .catch(err => {
+          appDOM.innerHTML = ""
+
+          // append error message
+          const divDOM = document.createElement('div');
+          divDOM.innerHTML = 'Sorry, Something error happen :/'
+          appDOM.appendChild(divDOM);
+
+          console.warn(err)
+        })
+    }
+
+    bootstrap();
+  })
+
+</script>
+
+<div id="app">
+  <input type="number" class="input" />
+  <div class="photos">
+    <!-- INSERT HERE -->
+  </div>
+
+</div>
