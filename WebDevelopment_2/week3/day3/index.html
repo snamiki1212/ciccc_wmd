@@ -2,7 +2,6 @@
   window.addEventListener("DOMContentLoaded", () => {
     const USERS_URL = "https://jsonplaceholder.typicode.com/users"
     let allUsers = [];
-    let renderUsers = [];
 
     const appDOM = document.querySelector('#app');
     const usersDOM = document.querySelector('.users');
@@ -53,7 +52,7 @@
     const bootstrap = () => {
       inputDOM.addEventListener('change', event => {
         const value = parseInt(event.target.value.trim());
-        renderUsers = isNaN(value) ? allUsers : allUsers.filter(user => user.id === value);
+        const renderUsers = isNaN(value) ? allUsers : allUsers.filter(user => user.id === value);
         rerender(renderUsers);
       })
 
@@ -61,8 +60,7 @@
         .then(res => res.json())
         .then(list => {
           allUsers = list;
-          renderUsers = allUsers;
-          rerender(renderUsers);
+          rerender(allUsers);
         })
         .catch(err => {
           appDOM.innerHTML = ""
