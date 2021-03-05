@@ -3,14 +3,6 @@
 
   const reset = dom => { dom.innerHTML = "" }
 
-  const rerender = (targetDOM, list) => {
-    reset(targetDOM);
-    list.forEach(item => {
-      const newUserDOM = createPhotoDom(item);
-      targetDOM.appendChild(newUserDOM);
-    });
-  }
-
   const createErrorDom = () => {
     const errDom = document.createElement('div');
     errDom.innerHTML = 'Sorry, Something error happen :/'
@@ -39,20 +31,28 @@
     return containerDOM
   }
 
-  window.addEventListener("DOMContentLoaded", () => {
-    let allPhotos = [];
+  const isValidId = maybeId => typeof maybeId === 'number' && !isNaN(maybeId) && maybeId >= 0
 
+  const renderPhotos = (targetDom, { list, domRecord }) => {
+    reset(targetDom);
+    list.forEach(item => {
+      const photoDom = domRecord[item.id]
+      targetDom.appendChild(photoDom);
+    });
+  }
+
+  const renderError = (targetDOM) => {
+    const errDom = createErrorDom()
+    targetDOM.innerHTML = ""
+    targetDOM.appendChild(errDom);
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
     const appDOM = document.querySelector('#app');
     const photosDOM = document.querySelector('.photos');
     const inputDOM = document.querySelector('.input');
 
     const init = () => {
-      inputDOM.addEventListener('change', event => {
-        const maybeId = parseInt(event.target.value.trim());
-        const filteredUsers = isNaN(maybeId) ? allPhotos : allPhotos.filter(user => user.id === maybeId);
-        rerender(photosDOM, filteredUsers);
-      })
-
       fetch(PHOTOS_URL)
         .then(res => {
           if (res.status !== 200) throw new Error("Unexpected response status", res.status);
@@ -60,13 +60,23 @@
         })
         .then(res => res.json())
         .then(list => {
-          allPhotos = list;
-          rerender(photosDOM, allPhotos);
+          const allPhotos = list;
+          const allPhotoDomRecord = list.reduce((prev, curr) => ({ ...prev, [curr.id]: createPhotoDom(curr) }), {})
+          return { allPhotos, allPhotoDomRecord }
+        })
+        .then(({ allPhotos, allPhotoDomRecord }) => {
+          renderPhotos(photosDOM, { list: allPhotos, domRecord: allPhotoDomRecord });
+          return { allPhotos, allPhotoDomRecord }
+        })
+        .then(({ allPhotos, allPhotoDomRecord }) => {
+          inputDOM.addEventListener('change', event => {
+            const maybeId = parseInt(event.target.value.trim());
+            const filterdList = isValidId(maybeId) ? allPhotos.filter(item => item.id === maybeId) : allPhotos;
+            renderPhotos(photosDOM, { list: filterdList, domRecord: allPhotoDomRecord });
+          })
         })
         .catch(err => {
-          const errDom = createErrorDom()
-          appDOM.innerHTML = ""
-          appDOM.appendChild(errDom);
+          renderError(appDOM)
           console.warn(err)
         })
     }
