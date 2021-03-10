@@ -1,0 +1,85 @@
+<script>
+  const PHOTOS_URL = "https://jsonplaceholder.typicode.com/photos"
+
+  const reset = dom => { dom.innerHTML = "" }
+
+  const rerender = (targetDOM, list) => {
+    reset(targetDOM);
+    list.forEach(item => {
+      const newUserDOM = createPhotoDom(item);
+      targetDOM.appendChild(newUserDOM);
+    });
+  }
+
+  const createErrorDom = () => {
+    const errDom = document.createElement('div');
+    errDom.innerHTML = 'Sorry, Something error happen :/'
+    return errDom
+  }
+
+  const createPhotoDom = item => {
+    const containerDOM = document.createElement('li');
+    containerDOM.style.border = "1px solid black"
+
+    // id
+    const idDOM = document.createElement('div');
+    idDOM.innerHTML = `id: ${item.id}`;
+    containerDOM.appendChild(idDOM)
+
+    // title
+    const titleDOM = document.createElement('div');
+    titleDOM.innerHTML = `title: ${item.title}`
+    containerDOM.appendChild(titleDOM)
+
+    // thumbnailUrl
+    const thumbnailDOM = document.createElement('img');
+    thumbnailDOM.src = item.thumbnailUrl
+    containerDOM.appendChild(thumbnailDOM)
+
+    return containerDOM
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    let allPhotos = [];
+
+    const appDOM = document.querySelector('#app');
+    const photosDOM = document.querySelector('.photos');
+    const inputDOM = document.querySelector('.input');
+
+    const init = () => {
+      inputDOM.addEventListener('change', event => {
+        const maybeId = parseInt(event.target.value.trim());
+        const filteredUsers = isNaN(maybeId) ? allPhotos : allPhotos.filter(user => user.id === maybeId);
+        rerender(photosDOM, filteredUsers);
+      })
+
+      fetch(PHOTOS_URL)
+        .then(res => {
+          if (res.status !== 200) throw new Error("Unexpected response status", res.status);
+          return res;
+        })
+        .then(res => res.json())
+        .then(list => {
+          allPhotos = list;
+          rerender(photosDOM, allPhotos);
+        })
+        .catch(err => {
+          const errDom = createErrorDom()
+          appDOM.innerHTML = ""
+          appDOM.appendChild(errDom);
+          console.warn(err)
+        })
+    }
+
+    init();
+  })
+
+</script>
+
+<div id="app">
+  <input type="number" class="input" />
+  <div class="photos">
+    <!-- HERE WILL BE REPLACED BY JS -->
+    <div>Loading...</div>
+  </div>
+</div>
