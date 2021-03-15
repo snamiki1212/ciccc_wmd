@@ -21,8 +21,10 @@ export function ReverseString(origionalString) {
   return [...originalString].reverse().join("");
 }
 
+// REF: https://en.wikipedia.org/wiki/List_of_Unicode_characters
 const CHAR_CODE_OF_UPPER_A = 65;
 const CHAR_CODE_OF_LOWER_A = 97;
+
 const LENGTH_OF_ALPHABET = 26;
 const generateAllAlphabets = (isUpper = false) => {
   const CHAR_CODE_OF_A = isUpper ? CHAR_CODE_OF_UPPER_A : CHAR_CODE_OF_LOWER_A;
@@ -48,14 +50,18 @@ export function GenerateOnlyNumbers() {
 
 const range = (from, to) =>
   Array.from({ length: to - from + 1 }, (_v, idx) => from + idx);
-export function GenerateOnlySymbols() {
-  return [
-    ...range(33, 47),
-    ...range(58, 64),
-    ...range(91, 96),
-    ...range(123, 126),
-  ].map((decimal) => String.fromCharCode(decimal));
+const SYMBOL_RANGE_LIST = [
   // REF: https://en.wikipedia.org/wiki/List_of_Unicode_characters
+  [33, 47],
+  [58, 64],
+  [91, 96],
+  [123, 126],
+];
+export function GenerateOnlySymbols() {
+  return SYMBOL_RANGE_LIST.reduce(
+    (prev, [from, to]) => [...prev, ...range(from, to)],
+    []
+  ).map((decimal) => String.fromCharCode(decimal));
   //Ie: $, %, !, #, etc
 }
 
