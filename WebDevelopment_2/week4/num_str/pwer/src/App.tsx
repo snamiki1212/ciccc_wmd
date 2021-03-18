@@ -1,11 +1,11 @@
 import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Page } from "./components/Page";
+import { PasswordGenerator } from "./components/PasswordGenerator";
 
 function App() {
   return (
     <ChakraProvider>
-      <Page />
+      <PasswordGenerator />
     </ChakraProvider>
   );
 }
