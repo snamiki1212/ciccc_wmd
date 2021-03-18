@@ -2,11 +2,16 @@ import React from "react";
 import {
   Button,
   Switch,
-  NumberInput,
-  NumberInputField,
-  NumberInputStepper,
-  NumberIncrementStepper,
-  NumberDecrementStepper,
+  Slider,
+  SliderTrack,
+  SliderFilledTrack,
+  SliderThumb,
+  Box,
+  HStack,
+  Stack,
+  Text,
+  Center,
+  useToast,
 } from "@chakra-ui/react";
 
 // REF: https://en.wikipedia.org/wiki/List_of_Unicode_characters
@@ -62,9 +67,14 @@ const generatePw = ({
   return pw;
 };
 
-const initialPw = generatePw({});
+const initialPw = generatePw({
+  length: 32,
+  shouldIncludeNumber: true,
+  shouldIncludeSymbol: true,
+  shouldIncludeUpper: true,
+});
 
-const useToggle = () => React.useReducer((prev) => !prev, false);
+const useToggle = () => React.useReducer((prev) => !prev, true);
 
 export function Page() {
   const [shouldIncludeUpper, toggleShouldIncludeUpper] = useToggle();
@@ -89,41 +99,100 @@ export function Page() {
     );
   }, [length, shouldIncludeNumber, shouldIncludeSymbol, shouldIncludeUpper]);
 
+  const toast = useToast();
+  const handleClickPw = React.useCallback(() => {
+    navigator.clipboard
+      .writeText(pw)
+      .then(() => {
+        toast({
+          title: "Copied",
+          status: "info",
+          duration: 1_500,
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+        toast({
+          title: "Can't copy",
+          status: "error",
+          duration: 1_500,
+        });
+      });
+  }, [toast, pw]);
+
   return (
-    <div>
-      <div>PW: {pw}</div>
-      <Button onClick={generate}>Generate</Button>
-      <hr />
-      <div>
-        <NumberInput onChange={handleLength} value={length}>
-          <NumberInputField />
-          <NumberInputStepper>
-            <NumberIncrementStepper />
-            <NumberDecrementStepper />
-          </NumberInputStepper>
-        </NumberInput>
-      </div>
-      <div>
-        <span>Include Uppercase?</span>
-        <Switch
-          onChange={toggleShouldIncludeUpper}
-          isChecked={shouldIncludeUpper}
-        />
-      </div>
-      <div>
-        <span>Include number?</span>
-        <Switch
-          onChange={toggleShouldIncludeNumber}
-          isChecked={shouldIncludeNumber}
-        />
-      </div>
-      <div>
-        <span>Include symbol?</span>
-        <Switch
-          onChange={toggleShouldIncludeSymbol}
-          isChecked={shouldIncludeSymbol}
-        />
-      </div>
-    </div>
+    <Center height="100vh" bg="purple.900">
+      <Stack
+        boxShadow="0 10px 25px black"
+        minWidth="400"
+        maxWidth="400"
+        bg="purple.50"
+        borderRadius="10"
+        p="5"
+      >
+        <Text fontSize="3xl" color="purple.700" fontWeight="900" align="center">
+          Password Genererator
+        </Text>
+        <Stack spacing="8">
+          <Box
+            align="center"
+            height="200"
+            overflowX="scroll"
+            borderWidth="1px"
+            borderColor="purple.100"
+            borderRadius="10"
+            p="5"
+            _hover={{
+              cursor: "pointer",
+            }}
+            onClick={handleClickPw}
+          >
+            <Text color="purple.400" wordBreak="break-all">
+              {pw}
+            </Text>
+          </Box>
+          <Box align="center">
+            <Button onClick={generate} colorScheme="purple" w="100%">
+              Generate
+            </Button>
+          </Box>
+          <Stack spacing="1">
+            <Text color="purple.700">Length</Text>
+            <Slider value={length} onChange={handleLength} max={1000} min={1}>
+              <SliderTrack bg="purple.100">
+                <SliderFilledTrack bg="purple" />
+              </SliderTrack>
+              <SliderThumb boxSize={10}>
+                <Box color="purple">{length}</Box>
+              </SliderThumb>
+            </Slider>
+          </Stack>
+          <HStack justifyContent="space-between">
+            <Text color="purple.700">Include Uppercase?</Text>
+            <Switch
+              onChange={toggleShouldIncludeUpper}
+              isChecked={shouldIncludeUpper}
+              colorScheme="purple"
+            />
+          </HStack>
+          <HStack justifyContent="space-between">
+            <Text color="purple.700">Include number?</Text>
+            <Switch
+              onChange={toggleShouldIncludeNumber}
+              isChecked={shouldIncludeNumber}
+              colorScheme="purple"
+            />
+          </HStack>
+          <HStack justifyContent="space-between">
+            <Text color="purple.700">Include symbol?</Text>
+            <Switch
+              onChange={toggleShouldIncludeSymbol}
+              isChecked={shouldIncludeSymbol}
+              colorScheme="purple"
+            />
+          </HStack>
+        </Stack>
+      </Stack>
+    </Center>
   );
 }
