@@ -6,6 +6,6 @@ This repo is managing Assignments of CICCC.
 
 # LICENSE
 
-NO ONE CAN COPY THIS DATA.
+NO ONE CAN USE THIS DATA.
 
 But you know this repo is public so everybody can check.
