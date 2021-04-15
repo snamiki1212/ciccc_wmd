@@ -1,0 +1,15 @@
+@import url("blocks/header.css");
+@import url("blocks/nav.css");
+@import url("blocks/footer.css");
+@import url("blocks/contents.css");
+@import url("blocks/content.css");
+@import url("blocks/banner.css");
+@import url("blocks/button.css");
+@import url("blocks/history-content.css");
+@import url("blocks/home-content.css");
+@import url("blocks/home-top.css");
+
+html {
+  color: #3a294c;
+  background-color: #f1edf4;
+}

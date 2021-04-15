@@ -1,0 +1,16 @@
+{
+  "name": "2_src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn http-server",
+    "open": "open http://127.0.0.1:8080/pages/",
+    "sass": "sass sass:public/css public/components/", 
+    "sass:watch": "yarn sass --watch"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "sass": "^1.32.5"
+  }
+}

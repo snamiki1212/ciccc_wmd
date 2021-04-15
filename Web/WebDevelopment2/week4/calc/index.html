@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+
+    let store = "0"
+    let displayDOM;
+
+    window.onload = (() => {
+      displayDOM = document.querySelector('.display');
+      displayDOM.innerHTML = store;
+    })
+
+    const handleClickNumpad = (event) => {
+      try {
+        switch (event.value) {
+          case "CE": {
+            store = "0";
+            displayDOM.innerHTML = store;
+            break;
+          }
+          case "=": {
+            displayDOM.innerHTML = eval(store);
+            store = "0";
+            break;
+          }
+          default: {
+            store += event.value;
+            displayDOM.innerHTML = store;
+            break;
+          }
+        }
+      } catch (err) {
+        console.warn(err);
+      }
+    }
+  </script>
+  <style>
+    * {
+      font-size: 1.5rem;
+    }
+
+    .container {
+      max-width: 300px;
+    }
+
+    .numpads {
+      display: grid;
+      gap: .3rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .numpad {
+      aspect-ratio: 1/1;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="display">
+      <!-- REPLACED_ME -->
+    </div>
+    <div class="numpads">
+      <button onclick="handleClickNumpad(this)" value="1" class="numpad one">1</button>
+      <button onclick="handleClickNumpad(this)" value="2" class="numpad two">2</button>
+      <button onclick="handleClickNumpad(this)" value="3" class="numpad three">3</button>
+      <button onclick="handleClickNumpad(this)" value="+" class="numpad puls">+</button>
+      <button onclick="handleClickNumpad(this)" value="4" class="numpad four">4</button>
+      <button onclick="handleClickNumpad(this)" value="5" class="numpad five">5</button>
+      <button onclick="handleClickNumpad(this)" value="6" class="numpad six">6</button>
+      <button onclick="handleClickNumpad(this)" value="-" class="numpad minus">-</button>
+      <button onclick="handleClickNumpad(this)" value="7" class="numpad seven">7</button>
+      <button onclick="handleClickNumpad(this)" value="8" class="numpad eight">8</button>
+      <button onclick="handleClickNumpad(this)" value="9" class="numpad night">9</button>
+      <button onclick="handleClickNumpad(this)" value="/" class="numpad divide">/</button>
+      <button onclick="handleClickNumpad(this)" value="0" class="numpad zero">0</button>
+      <button onclick="handleClickNumpad(this)" value="CE" class="numpad clear">CE</button>
+      <button onclick="handleClickNumpad(this)" value="=" class="numpad equal">=</button>
+      <button onclick="handleClickNumpad(this)" value="*" class="numpad multiply">*</button>
+    </div>
+  </div>
+</body>
+
+</html>

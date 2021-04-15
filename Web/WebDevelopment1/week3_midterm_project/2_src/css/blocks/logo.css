@@ -1,0 +1,27 @@
+.icon-logo-text {
+  fill: white;
+  height: 25px;
+  width: 199px;
+  margin-right: 1rem;
+}
+
+.icon-logo-star__header {
+  pointer-events: none;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  fill: hsla(0, 0%, 100%, 0.1);
+  width: 200px;
+  height: 200px;
+  margin: 0 0.5rem 0 0;
+}
+
+.icon-logo-star__footer {
+  position: absolute;
+  fill: white;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  top: -90px;
+  left: var(--gap);
+}

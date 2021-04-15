@@ -1,0 +1,14 @@
+.nav {
+}
+
+.nav .nav__list-parent {
+  list-style: none;
+}
+
+.nav .nav__list-child {
+}
+
+.nav .nav__list-child-text {
+  color: #f1edf4;
+  font-size: 18px;
+}

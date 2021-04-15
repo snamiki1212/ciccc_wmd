@@ -1,0 +1,27 @@
+.section {
+}
+
+.section .section__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 5em;
+}
+
+.section__title-bar {
+  position: sticky;
+  top: 1.9rem;
+  z-index: 99;
+  background-color: var(--white);
+}
+.section .section__title {
+  margin-left: 2em;
+}
+
+.section .section__halfline {
+  width: 45%;
+  margin: 2%;
+  margin-left: 0;
+}
+
+.section .section__oneline {
+}

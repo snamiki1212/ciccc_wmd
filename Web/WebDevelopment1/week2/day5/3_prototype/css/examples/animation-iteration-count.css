@@ -1,0 +1,32 @@
+.example__animation-iteration-count {
+  width: 5em;
+  height: 5em;
+  background-color: var(--dark-gray);
+  display: inline-block;
+  color: var(--white);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spin:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+}
+
+.spin__one-time {
+  animation-iteration-count: 1;
+}
+
+.spin__three-time {
+  animation-iteration-count: 3;
+}
+
+.spin__infinite {
+  animation-iteration-count: infinite;
+}

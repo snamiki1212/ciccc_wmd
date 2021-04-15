@@ -1,0 +1,92 @@
+:root {
+  /* 
+  Color Pattern
+  https://coolors.co/000000-14213d-fca311-e5e5e5-ffffff
+   */
+  --white: white;
+  --light: #e5e5e5;
+  --vivid: #fca311;
+  --dark: #14213d;
+  --black: black;
+
+  /* Layout */
+  --min-width: 450px;
+  --min-img-basis: 250px;
+}
+
+html {
+  font-size: clamp(12px, calc(0.7rem + 0.25vw), 20px);
+  min-width: var(--min-width);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 10rem;
+  width: 100%;
+  background: var(--black);
+}
+.header__title {
+  font-size: 4rem;
+  text-decoration: none;
+  color: var(--vivid);
+  transition: 0.6s;
+}
+.header__title:hover {
+  opacity: 0.6;
+}
+.centerize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .responsive {
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  background: var(--vivid);
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+}
+.nav ul li:hover {
+  opacity: 0.6;
+}
+
+.img__container {
+  margin: 3rem;
+  padding: 3rem;
+  border: 1rem solid var(--vivid);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.img__content {
+  flex: 1 0 var(--min-img-basis);
+  object-fit: cover;
+}
+
+.footer {
+  height: 10rem;
+  width: 100%;
+  background: var(--black);
+}

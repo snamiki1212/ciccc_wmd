@@ -1,0 +1,111 @@
+<script>
+  "use strict"
+
+  const createPhotosUrl = maybeId => {
+    const isId = !isNaN(parseInt(maybeId))
+    return `https://jsonplaceholder.typicode.com/photos/${isId ? maybeId : ""}`
+  }
+
+  const fetchPhotos = url => {
+    console.log(">> fetch start:", url);
+    return fetch(url)
+      .then(res => {
+        if (res.status !== 200) throw new Error("Unexpected response status")
+        return res;
+      })
+      .then(res => res.json())
+      .then(data => Array.isArray(data) ? data : [data])
+  }
+
+  const reset = dom => { dom.innerHTML = "" }
+
+  const rerender = (targetDOM, list) => {
+    reset(targetDOM);
+    list.forEach(item => {
+      const newUserDOM = createPhotoDom(item);
+      targetDOM.appendChild(newUserDOM);
+    });
+  }
+
+  const createErrorDom = () => {
+    const errDom = document.createElement('div');
+    errDom.innerHTML = 'Sorry, Something error happen :/'
+    return errDom
+  }
+
+  const createPhotoDom = item => {
+    const containerDOM = document.createElement('li');
+    containerDOM.style.border = "1px solid black"
+
+    // id
+    const idDOM = document.createElement('div');
+    idDOM.innerHTML = item.id
+    containerDOM.appendChild(idDOM)
+
+    // name
+    const nameDOM = document.createElement('div');
+    nameDOM.innerHTML = item.name
+    containerDOM.appendChild(nameDOM)
+
+    // title
+    const titleDOM = document.createElement('div');
+    titleDOM.innerHTML = item.title
+    containerDOM.appendChild(titleDOM)
+
+    // thumbnailUrl
+    const thumbnailDOM = document.createElement('img');
+    thumbnailDOM.src = item.thumbnailUrl
+    containerDOM.appendChild(thumbnailDOM)
+
+    return containerDOM
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    let allPhotos = [];
+
+    const appDOM = document.querySelector('#app');
+    const photosDOM = document.querySelector('.photos');
+    const inputDOM = document.querySelector('.input');
+
+    const init = () => {
+      inputDOM.addEventListener('change', event => {
+        const id = parseInt(event.target.value.trim());
+        const url = createPhotosUrl(id);
+
+        fetchPhotos(url)
+          .then(list => {
+            allPhotos = list;
+            rerender(photosDOM, allPhotos);
+          }).catch(err => {
+            const errDom = createErrorDom()
+            appDOM.innerHTML = ""
+            appDOM.appendChild(errDom);
+            console.warn(err)
+          })
+      })
+
+      const url = createPhotosUrl();
+      fetchPhotos(url)
+        .then(list => {
+          allPhotos = list;
+          rerender(photosDOM, allPhotos);
+        }).catch(err => {
+          const errDom = createErrorDom()
+          appDOM.innerHTML = ""
+          appDOM.appendChild(errDom);
+          console.warn(err)
+        })
+    }
+
+    init();
+  })
+
+</script>
+
+<div id="app">
+  <input type="number" class="input" />
+  <div class="photos">
+    <!-- HERE WILL BE REPLACED BY JS -->
+    <div>Loading...</div>
+  </div>
+</div>

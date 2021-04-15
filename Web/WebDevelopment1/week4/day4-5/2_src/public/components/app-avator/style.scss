@@ -1,0 +1,39 @@
+@import "../../../sass/color";
+
+$avator_size: 5rem;
+
+.avator {
+  display: grid;
+  grid-template-columns: $avator_size 1fr;
+  gap: 0.5rem;
+  background: var(--dark-000);
+  padding: 1rem 0 3rem;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__title {
+    color: var(--light-000);
+  }
+
+  &__img-wrapper {
+  }
+  &__img {
+    width: $avator_size;
+    height: $avator_size;
+    border-radius: 20px;
+    transition: 0.5s;
+
+    &:hover {
+      border-radius: 50%;
+    }
+  }
+
+  &__auther-name-link {
+    text-decoration: none;
+    color: var(--vivid-color);
+  }
+}

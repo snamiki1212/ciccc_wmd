@@ -1,0 +1,21 @@
+$avator_size: 32px;
+$gap: 10px;
+.input {
+  display: flex;
+
+  &__avator {
+    width: $avator_size;
+    height: $avator_size;
+    margin-right: $gap;
+  }
+  &__textarea {
+    height: 100px;
+    width: 100%;
+    border-style: none;
+    padding: 0;
+    background: var(--dark-100);
+    color: var(--light-000);
+    border: 1px solid var(--dark-200);
+    resize: none;
+  }
+}

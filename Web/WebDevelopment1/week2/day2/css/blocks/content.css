@@ -1,0 +1,14 @@
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-header {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: center; /** TASK:E **/
+}
+
+.content {
+  border: 1px solid var(--dark); /* TASK:C */
+}

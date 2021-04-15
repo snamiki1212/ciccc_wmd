@@ -1,0 +1,23 @@
+@import "_colors";
+@import "_navbar";
+@import "_header";
+@import "_footer";
+@import "_aside";
+
+.main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.section {
+  background: $section_bg_color;
+  padding: 1rem;
+}
+
+.heading {
+  background: $heading_bg_color;
+}
+
+.article {
+  background: $article_bg_color;
+}

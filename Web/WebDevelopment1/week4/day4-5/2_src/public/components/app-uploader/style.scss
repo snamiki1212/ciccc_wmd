@@ -1,0 +1,21 @@
+@import "../../../sass/color";
+
+.uploader {
+  margin: 5rem;
+  padding: 5rem;
+
+  border-radius: 10px;
+  background: var(--light-200);
+  border: 1rem solid var(--vivid-color);
+
+  &__item {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .uploader {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}

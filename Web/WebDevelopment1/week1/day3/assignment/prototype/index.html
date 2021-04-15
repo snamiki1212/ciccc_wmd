@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Support Form - mucki Industory</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <header>
+    <img src="header.jpg" alt="header-logo" />
+  </header>
+  <main>
+    <article>
+      <section>
+        <h2>Support Form</h2>
+        <hr />
+        <form action="javascript:alert('Submited!')">
+          <div>
+            <label for="SupportForm__name-first">Name</label>
+            <label for="SupportForm__name-last"></label>
+            <input type="text" placeholder="john" id="SupportForm__name-first">
+            <input type="text" placeholder="william" id="SupportForm__name-last">
+          </div>
+
+          <div>
+            <label for="SupportForm__title">Title</label>
+            <input type="text" placeholder="Summary of what you would like to know" id="SupportForm__title" size="50">
+          </div>
+
+          <div>
+            <label for="SupportForm__body">Body</label>
+            <textarea id="SupportForm__body" rows="3" placeholder="Write what you would like to know..."></textarea>
+          </div>
+
+          <hr />
+          <div>
+            <span>Do you accept to receive commercial email?</span>
+            <div>
+              <input type="radio" name="commercial-email" id="SupportForm__accept" checked><label
+                for="SupportForm__accept">Yes</label>
+
+              <input type="radio" name="commercial-email" id="SupportForm__accept"><label
+                for="SupportForm__accept">No</label>
+            </div>
+          </div>
+
+          <hr />
+          <div>
+
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+
+      </section>
+    </article>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

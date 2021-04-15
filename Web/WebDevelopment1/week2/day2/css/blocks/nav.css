@@ -1,0 +1,30 @@
+.nav__wrapper {
+  background-image: var(--bg-img-url);
+  padding: 1em 0;
+  top: 0;
+  position: sticky; /** TASK:G */
+}
+.nav {
+  list-style: none;
+  text-align: center; /** TASK:E **/
+}
+.nav > li {
+  display: inline;
+  margin: 0 0.5em;
+}
+.nav__button {
+  text-decoration: none;
+  padding: 0.5em 2em;
+  color: var(--dark);
+  background-color: var(--white);
+  transition: 0.5s;
+  font-size: 1.5em;
+}
+.nav__button:hover {
+  transition: 0.5s;
+  background-color: var(--light);
+}
+.nav__button_active {
+  /* TASK:H */
+  background-color: var(--light);
+}

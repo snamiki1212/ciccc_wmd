@@ -1,0 +1,62 @@
+<div id="app">test</div>
+
+
+<script>
+  const parent = document.getElementById("app")
+  const insertBreakPoint = (elem) => {
+    const hr = document.createElement('hr')
+    elem.appendChild(hr)
+  }
+
+  // child
+  const child = document.createElement('p')
+  child.innerHTML = 'hey'
+  child.setAttribute('class', 'red');
+  parent.appendChild(child)
+  insertBreakPoint(parent)
+
+  // btn
+  const btn = document.createElement('button')
+  btn.innerHTML = 'clicked me'
+  btn.addEventListener('click', (_elem) => {
+    alert("clicked")
+  })
+  parent.appendChild(btn)
+  insertBreakPoint(parent)
+
+
+  // confirmation
+  const wrapper = document.createElement('div', { id: 'wrapper' })
+  const confirmation = document.createElement('button')
+  confirmation.innerHTML = 'confirm'
+  confirmation.addEventListener('click', (elem) => {
+    const msg = confirm('is this ok?') ?
+      'yes' : 'no'
+    const child = document.createElement('p')
+    child.innerHTML = 'msg'
+    wrapper.appendChild(child);
+  })
+  wrapper.appendChild(confirmation)
+  parent.appendChild(wrapper)
+  insertBreakPoint(parent)
+
+  // inputer
+  const nameElem = document.createElement('p', { id: 'yourName' })
+  nameElem.innerHTML = 'example name'
+  const inputNameButton = document.createElement('button')
+  inputNameButton.innerHTML = 'input your name'
+  inputNameButton.addEventListener('click', (elem) => {
+    const name = prompt('input your name')
+    nameElem.innerHTML = name;
+  });
+  parent.appendChild(inputNameButton)
+  parent.appendChild(nameElem)
+  insertBreakPoint(parent)
+
+</script>
+
+<style>
+  .red {
+    background: red;
+  }
+</style>

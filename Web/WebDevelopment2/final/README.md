@@ -1,0 +1,3 @@
+```zsh
+> node merge.js
+```

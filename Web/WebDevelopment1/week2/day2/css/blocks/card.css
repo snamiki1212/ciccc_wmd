@@ -1,0 +1,31 @@
+.card {
+  display: inline-block;
+  border: 1px solid var(--dark);
+  background-color: var(--light);
+  width: 20%;
+  margin: 1em 2%;
+  padding: 1em;
+  text-align: center;
+  overflow: scroll; /** TASK:F **/
+  max-height: 15em;
+}
+
+.avator {
+  border-radius: 50%; /** TASK:D **/
+  border: 1px solid var(--dark);
+  margin: 0 auto;
+}
+
+.name__wrapper {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.name {
+  border-bottom: 1px solid var(--dark);
+}
+
+.description {
+  /** TASK: B **/
+  max-height: 10em;
+  max-width: 100em;
+}

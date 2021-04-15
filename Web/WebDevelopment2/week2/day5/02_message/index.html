@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .container {
+      display: grid;
+      place-items: center;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .visible {
+      visibility: visible;
+    }
+  </style>
+  <script type="module">
+
+    const inputDOM = document.querySelector('.input')
+    const delivedMessageDOM = document.querySelector('.deliverdMessage')
+    const submitDOM = document.querySelector('.submit');
+
+    function handleSubmit(_event) {
+      const inputValue = inputDOM.value.trim()
+      if (!inputValue) return alert("Please input your message")
+
+      inputDOM.value = ""
+      appear(delivedMessageDOM)
+      setTimeout(() => {
+        disappear(delivedMessageDOM)
+      }, 2000)
+    }
+
+    function disappear(dom) {
+      dom.classList.remove('visible')
+      dom.classList.add('hidden')
+    }
+
+    function appear(dom) {
+      dom.classList.add('visible')
+      dom.classList.remove('hidden')
+    }
+
+    submitDOM.addEventListener('click', handleSubmit)
+
+  </script>
+</head>
+
+
+<body>
+  <div class="container">
+    <p>A message you would like to pass</p>
+    <input class="input" placeholder="Thank you for your good app!" />
+    <button class="submit">Submit</button>
+    <p class="deliverdMessage hidden">Last message Deliverd</p>
+  </div>
+</body>
+
+</html>
