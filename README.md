@@ -1,6 +1,6 @@
 # ciccc-web-mobile
 
-This repo is managing Assignments of CICCC.
+Assignments of CICCC.
 
 [CICCC](https://ciccc.ca/) is community college at Vancouver.
 
@@ -8,4 +8,4 @@ This repo is managing Assignments of CICCC.
 
 NO ONE CAN USE THIS DATA.
 
-But you know this repo is public so everybody can check.
+However, everybody can see this public repo.
